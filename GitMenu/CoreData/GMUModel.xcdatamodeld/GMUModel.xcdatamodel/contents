@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Xcode 7.0">
+    <entity name="ManagedRepository" representedClassName="GMUManagedRepo" syncable="YES">
+        <attribute name="effectiveName" transient="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isFavorite" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="lastActivity" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="repoName" attributeType="String" defaultValueString="My Repo" syncable="YES"/>
+        <attribute name="repoType" attributeType="Integer 16" defaultValueString="-1" syncable="YES"/>
+        <attribute name="repoURL" attributeType="Transformable" valueTransformerName="" syncable="YES"/>
+        <relationship name="repoGroups" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="RepoGroup" inverseName="repositories" inverseEntity="RepoGroup" syncable="YES"/>
+    </entity>
+    <entity name="RepoGroup" representedClassName="GMURepoGroup" syncable="YES">
+        <attribute name="groupName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="repositories" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="ManagedRepository" inverseName="repoGroups" inverseEntity="ManagedRepository" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ManagedRepository" positionX="-63" positionY="-18" width="128" height="150"/>
+        <element name="RepoGroup" positionX="-63" positionY="9" width="128" height="75"/>
+    </elements>
+</model>
