@@ -11,6 +11,8 @@
 #import "GMUManagedRepo.h"
 #import "GMUUtilities.h"
 
+enum { GMUBackgroundFetchError = 103, GMUFetchFailedError = 104, GMURepoAlreadyExistsError = 105 };
+
 @interface GMUMainWindowController ()
 
 @property(weak) IBOutlet NSToolbar *toolbar;
@@ -33,7 +35,13 @@
 
 @property(strong, readonly) NSManagedObjectContext *managedObjectContext;
 
+- (BOOL)repositoryExistsInMOCWithURL:(NSURL *)repoURL;
+- (void)addRepositoryWithURL:(NSURL *)repoURL;
+- (NSString *)defaultNameForRepoWithURL:(NSURL *)repoURL;
+
 @end
+
+static NSString *MAIN_MENU_ERROR_DOMAIN = @"GMU_MAIN_MENU_ERROR_DOMAIN";
 
 @implementation GMUMainWindowController
 
@@ -100,6 +108,22 @@
                               return;
                           }
 
+                          if ([self repositoryExistsInMOCWithURL:openPanel.URL]) {
+                              NSString *description = NSLocalizedString(
+                                    @"This repo is already managed.", @"Repo already exists.");
+                              NSDictionary *dict = @{
+                                  NSLocalizedDescriptionKey : description,
+                                  NSURLErrorKey : openPanel.URL
+                              };
+                              NSError *error = [NSError errorWithDomain:MAIN_MENU_ERROR_DOMAIN
+                                                                   code:GMURepoAlreadyExistsError
+                                                               userInfo:dict];
+                              [NSApp presentError:error];
+                              return;
+                          }
+
+                          [self addRepositoryWithURL:openPanel.URL];
+
                       }];
 }
 
@@ -129,6 +153,87 @@
 
     DDLogDebug(@"This is not a valid path: %@", url);
     return nil;
+}
+
+- (NSString *)defaultNameForRepoWithURL:(NSURL *)repoURL
+{
+    if ([[[repoURL lastPathComponent] lowercaseString] hasSuffix:kGit]) {
+        return [repoURL lastPathComponent];
+    }
+
+    if ([[[repoURL lastPathComponent] lowercaseString] isEqualToString:kGit]) {
+        NSUInteger idx = [[repoURL pathComponents] count] - 2;
+        return [[repoURL pathComponents] objectAtIndex:idx];
+    }
+
+    return [repoURL lastPathComponent];
+}
+
+- (void)addRepositoryWithURL:(NSURL *)repoURL
+{
+    GMUManagedRepo *newRepo =
+          [NSEntityDescription insertNewObjectForEntityForName:kManagedRepoEntityName
+                                        inManagedObjectContext:self.managedObjectContext];
+    newRepo.repoURL = repoURL;
+    newRepo.repoName = [self defaultNameForRepoWithURL:repoURL];
+
+    NSError *error;
+
+    if (![self.managedObjectContext save:&error]) {
+        DDLogError(@"Error saving managed object context: %@\n%@", error.localizedDescription,
+                   error.userInfo);
+        [NSApp presentError:error];
+    }
+}
+
+- (BOOL)repositoryExistsInMOCWithURL:(NSURL *)repoURL
+{
+    NSError *anyError;
+    NSManagedObjectContext *taskContext = GMU_privateQueueContext(&anyError);
+    if (!taskContext) {
+        DDLogError(@"Error creating background fetch context: %@\n%@",
+                   anyError.localizedDescription, anyError.userInfo);
+        NSString *description = NSLocalizedString(@"Could not configure application.",
+                                                  @"Failed to create background fetch context.");
+        NSDictionary *dict =
+              @{NSLocalizedDescriptionKey : description, NSUnderlyingErrorKey : anyError};
+        NSError *connectionError = [NSError errorWithDomain:MAIN_MENU_ERROR_DOMAIN
+                                                       code:GMUBackgroundFetchError
+                                                   userInfo:dict];
+        [NSApp presentError:connectionError];
+    }
+
+    NSFetchRequest *existingRepoFetchRequest =
+          [NSFetchRequest fetchRequestWithEntityName:kManagedRepoEntityName];
+    existingRepoFetchRequest.predicate =
+          [NSPredicate predicateWithFormat:@"repoURL == %@", repoURL];
+    NSArray *matchingRepos =
+          [self.managedObjectContext executeFetchRequest:existingRepoFetchRequest error:&anyError];
+
+    if (!matchingRepos) {
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            DDLogError(@"Error fetching: %@\n%@", anyError.localizedDescription, anyError.userInfo);
+            NSString *description =
+                  NSLocalizedString(@"Error attempting to fetch existing repos.", @"Fetch failed");
+            NSDictionary *dict =
+                  @{NSLocalizedDescriptionKey : description, NSUnderlyingErrorKey : anyError};
+            NSError *connectionError = [NSError errorWithDomain:MAIN_MENU_ERROR_DOMAIN
+                                                           code:GMUFetchFailedError
+                                                       userInfo:dict];
+            [NSApp presentError:connectionError];
+        }];
+    }
+
+    if (!matchingRepos.count) {
+        return NO;
+    }
+
+    GMUManagedRepo *firstRepo = [matchingRepos firstObject];
+    if ([firstRepo.repoURL isEqual:repoURL]) {
+        return YES;
+    }
+
+    return NO;
 }
 
 @end

@@ -73,6 +73,22 @@ static NSString *const GMUSidebarErrorDomain = @"SIDEBAR_ERROR_DOMAIN";
                     children = [thisGroup.repositories array];
                 }
                 else {
+                    if ([item isEqualToString:@"Local Repositories"]) {
+                        NSError *error;
+                        NSFetchRequest *fetchRequest =
+                              [NSFetchRequest fetchRequestWithEntityName:kManagedRepoEntityName];
+                        fetchRequest.predicate =
+                              [NSPredicate predicateWithFormat:@"ANY repoGroups == NULL"];
+                        NSArray *fetchedRepos =
+                              [self.managedObjectContext executeFetchRequest:fetchRequest
+                                                                       error:&error];
+                        if (!fetchedRepos) {
+                            DDLogError(@"Error fetching repositories: %@",
+                                       error.localizedDescription);
+                        }
+
+                        children = fetchedRepos;
+                    }
                     DDLogInfo(@"Group %@ had no repos.", thisGroup);
                 }
             }
