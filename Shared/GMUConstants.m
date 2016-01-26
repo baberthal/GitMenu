@@ -13,3 +13,7 @@ NSString *const GMUAppGroupIdentifier = @"group.org.jmorgan.BetterVCS";
 NSString *const GMUMainStoreFilename = @"GitMenu.storedata";
 
 NSString *const kGit = @".git";
+
+NSString *const kManagedRepoEntityName = @"ManagedRepository";
+
+NSString *const kRepoGroupEntityName = @"RepoGroup";

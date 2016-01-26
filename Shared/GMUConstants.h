@@ -14,5 +14,7 @@
 extern NSString *const GMUAppGroupIdentifier;
 extern NSString *const GMUMainStoreFilename;
 extern NSString *const kGit;
+extern NSString *const kManagedRepoEntityName;
+extern NSString *const kRepoGroupEntityName;
 
 #endif /* GMUConstants_h */
