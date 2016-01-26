@@ -20,6 +20,20 @@
                ReferencedContainer = "container:GitMenu.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "90451E3C1C52F7D600ECF88D"
+               BuildableName = "GMUDataModelTests.xctest"
+               BlueprintName = "GMUDataModelTests"
+               ReferencedContainer = "container:GitMenu.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

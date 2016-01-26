@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>GMUDataModel.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>GitFinderMenu.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>GitMenu.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,12 +22,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>90451E331C52F7D600ECF88D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>90451E3C1C52F7D600ECF88D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9065B9671C52E00500854414</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>9065B97A1C52E00500854414</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>907C8BD11C52E2BC00A09E55</key>
 		<dict>
 			<key>primary</key>
 			<true/>
