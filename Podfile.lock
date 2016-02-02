@@ -7,22 +7,22 @@ PODS:
     - CocoaLumberjack/Core
   - CocoaLumberjack/Extensions (2.2.0):
     - CocoaLumberjack/Default
-  - Expecta (1.0.5)
+  - Nimble (3.0.0)
   - OCMock (2.2.4)
-  - Specta (1.0.5)
+  - Quick (0.9.0)
 
 DEPENDENCIES:
   - CocoaLumberjack
-  - Expecta (~> 1.0)
+  - Nimble (~> 3.0.0)
   - OCMock (~> 2.2)
-  - Specta (~> 1.0)
+  - Quick (~> 0.8)
 
 SPEC CHECKSUMS:
   CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
-  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
+  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
   OCMock: a6a7dc0e3997fb9f35d99f72528698ebf60d64f2
-  Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
+  Quick: 332eb1da73125a2106dd637424c803f2ae97e4a9
 
-PODFILE CHECKSUM: 2748c9de1bedb4accaef8c54ec194bdbcb821bc7
+PODFILE CHECKSUM: 01cdaf77b740913cf199717e097201adbc71c3f3
 
 COCOAPODS: 1.0.0.beta.2

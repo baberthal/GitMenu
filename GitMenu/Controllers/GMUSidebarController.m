@@ -7,11 +7,9 @@
 //
 
 #import "GMUSidebarController.h"
-#import "GMUCoreDataStackManager.h"
-#import "GMUManagedRepo.h"
-#import "GMURepoGroup.h"
 #import "GMURepoSidebarCellView.h"
 #import "GMUUtilities.h"
+#import <GMUDataModel/GMUDataModel.h>
 
 @interface GMUSidebarController ()
 
@@ -201,6 +199,8 @@ static NSString *const GMUSidebarErrorDomain = @"SIDEBAR_ERROR_DOMAIN";
     return [[self _childrenForItem:item] count];
 }
 
+#pragma mark - NSOutlineViewDelegate
+
 - (BOOL)outlineView:(NSOutlineView *)outlineView isGroupItem:(id)item
 {
     return [self.topLevelItems containsObject:item];
@@ -222,6 +222,30 @@ static NSString *const GMUSidebarErrorDomain = @"SIDEBAR_ERROR_DOMAIN";
         GMUManagedRepo *repo = (GMUManagedRepo *)item;
         [result setRepoValue:repo];
         return result;
+    }
+}
+
+- (BOOL)outlineView:(NSOutlineView *)outlineView shouldSelectItem:(id)item
+{
+    if ([self.topLevelItems containsObject:item]) {
+        return NO;
+    }
+
+    return YES;
+}
+
+- (void)outlineViewSelectionDidChange:(NSNotification *)notification
+{
+    NSOutlineView *outlineView = (NSOutlineView *)notification.object;
+    if (![outlineView isEqual:self.sidebar]) {
+        return;
+    }
+
+    NSInteger row = [outlineView selectedRow];
+    GMUManagedRepo *repo = [self.sidebar itemAtRow:row];
+
+    if (self.delegate) {
+        [self.delegate sidebarController:self didChangeSelectionWithItem:repo];
     }
 }
 

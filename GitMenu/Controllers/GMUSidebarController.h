@@ -8,8 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol GMUSidebarControllerDelegate;
+
 @interface GMUSidebarController : NSObject <NSOutlineViewDataSource, NSOutlineViewDelegate>
 
 @property(weak) IBOutlet NSOutlineView *sidebar;
+@property(assign) IBOutlet id<GMUSidebarControllerDelegate> delegate;
+
+@end
+
+@protocol GMUSidebarControllerDelegate <NSObject>
+
+@required
+- (void)sidebarController:(GMUSidebarController *)controller didChangeSelectionWithItem:(id)item;
 
 @end

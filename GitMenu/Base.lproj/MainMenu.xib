@@ -671,6 +671,8 @@
         <customObject id="0zU-A9-IOQ" customClass="GMUMainWindowController">
             <connections>
                 <outlet property="mainContentView" destination="gSE-7p-Axh" id="xwJ-gf-a8U"/>
+                <outlet property="mainViewController" destination="2Gx-qU-9vG" id="gvG-DN-zbY"/>
+                <outlet property="sidebarController" destination="ats-sB-hFA" id="hvs-XN-5BG"/>
                 <outlet property="sidebarView" destination="Y7k-60-Vvz" id="FfA-4T-4RY"/>
                 <outlet property="splitView" destination="w5U-P9-wfZ" id="zNa-QO-TKG"/>
                 <outlet property="toolbar" destination="4py-LS-A5X" id="gVy-UY-IVP"/>
@@ -688,37 +690,37 @@
         <window title="GitMenu" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="840" height="640"/>
+            <rect key="contentRect" x="335" y="390" width="852" height="640"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
             <value key="minSize" type="size" width="840" height="640"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="840" height="640"/>
+                <rect key="frame" x="0.0" y="0.0" width="852" height="640"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <splitView arrangesAllSubviews="NO" dividerStyle="thin" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w5U-P9-wfZ">
-                        <rect key="frame" x="0.0" y="0.0" width="840" height="640"/>
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="640"/>
                         <subviews>
                             <customView id="Y7k-60-Vvz">
-                                <rect key="frame" x="0.0" y="0.0" width="178" height="640"/>
+                                <rect key="frame" x="0.0" y="0.0" width="181" height="640"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <subviews>
                                     <visualEffectView appearanceType="vibrantLight" blendingMode="behindWindow" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="B0u-a0-uYM">
-                                        <rect key="frame" x="0.0" y="0.0" width="178" height="640"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="640"/>
                                         <subviews>
                                             <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Pz-7K-DIp">
-                                                <rect key="frame" x="2" y="2" width="174" height="638"/>
+                                                <rect key="frame" x="2" y="2" width="177" height="638"/>
                                                 <clipView key="contentView" drawsBackground="NO" id="s4i-FT-wob">
-                                                    <rect key="frame" x="0.0" y="0.0" width="174" height="638"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="177" height="638"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" indentationPerLevel="16" outlineTableColumn="Coh-i1-lZ6" id="QhN-Mr-V1O">
-                                                            <rect key="frame" x="0.0" y="0.0" width="174" height="638"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="177" height="0.0"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <size key="intercellSpacing" width="3" height="2"/>
                                                             <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                                             <tableColumns>
-                                                                <tableColumn width="171" minWidth="16" maxWidth="1000" id="Coh-i1-lZ6">
+                                                                <tableColumn width="174" minWidth="16" maxWidth="1000" id="Coh-i1-lZ6">
                                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                                         <font key="font" metaFont="smallSystem"/>
                                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -732,7 +734,7 @@
                                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                     <prototypeCellViews>
                                                                         <tableCellView identifier="HeaderCell" id="thc-Vp-uqG">
-                                                                            <rect key="frame" x="1" y="1" width="171" height="17"/>
+                                                                            <rect key="frame" x="1" y="1" width="174" height="17"/>
                                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                             <subviews>
                                                                                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LCg-2b-u4T">
@@ -749,7 +751,7 @@
                                                                             </connections>
                                                                         </tableCellView>
                                                                         <tableCellView identifier="RepoCell" id="3JK-5B-iCr" customClass="GMURepoSidebarCellView">
-                                                                            <rect key="frame" x="1" y="20" width="171" height="17"/>
+                                                                            <rect key="frame" x="1" y="20" width="174" height="17"/>
                                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                             <subviews>
                                                                                 <imageView translatesAutoresizingMaskIntoConstraints="NO" id="xha-Sn-ZSI">
@@ -825,7 +827,7 @@
                                 </constraints>
                             </customView>
                             <customView fixedFrame="YES" id="gSE-7p-Axh">
-                                <rect key="frame" x="179" y="0.0" width="661" height="640"/>
+                                <rect key="frame" x="182" y="0.0" width="670" height="640"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </customView>
                         </subviews>
@@ -876,14 +878,14 @@
                     <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="udP-8p-QGz"/>
                     <toolbarItem implicitItemIdentifier="5870E537-F3D7-4D15-B094-F40285E520A2" label="Branch" paletteLabel="Branch" image="branch-with-arrows" id="Ppm-15-ySG">
                         <nil key="toolTip"/>
-                        <size key="minSize" width="37" height="25"/>
-                        <size key="maxSize" width="38" height="25"/>
+                        <size key="minSize" width="80" height="25"/>
+                        <size key="maxSize" width="110" height="25"/>
                         <button key="view" verticalHuggingPriority="750" id="uBa-Dh-kkX">
-                            <rect key="frame" x="3" y="14" width="38" height="25"/>
+                            <rect key="frame" x="0.0" y="14" width="90" height="25"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="branch-with-arrows" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yw3-gB-LPR">
+                            <buttonCell key="cell" type="roundTextured" title="master" bezelStyle="texturedRounded" image="branch-with-arrows" imagePosition="left" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yw3-gB-LPR">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                <font key="font" metaFont="system"/>
+                                <font key="font" metaFont="systemLight" size="13"/>
                             </buttonCell>
                         </button>
                     </toolbarItem>
@@ -895,7 +897,7 @@
                         <popUpButton key="view" verticalHuggingPriority="750" id="Me2-Ko-rs0">
                             <rect key="frame" x="11" y="14" width="38" height="26"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <popUpButtonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSActionTemplate" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" pullsDown="YES" selectedItem="FfM-NI-1Tx" id="xP7-2R-9pH">
+                            <popUpButtonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" pullsDown="YES" selectedItem="FfM-NI-1Tx" id="xP7-2R-9pH">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="menu"/>
                                 <menu key="menu" id="eb4-25-Bui">
@@ -935,11 +937,19 @@
             <connections>
                 <outlet property="delegate" destination="0zU-A9-IOQ" id="Zga-t3-dPs"/>
             </connections>
-            <point key="canvasLocation" x="234" y="439"/>
+            <point key="canvasLocation" x="240" y="439"/>
         </window>
         <customObject id="ats-sB-hFA" customClass="GMUSidebarController">
             <connections>
+                <outlet property="delegate" destination="2Gx-qU-9vG" id="EI9-Ey-fCT"/>
                 <outlet property="sidebar" destination="QhN-Mr-V1O" id="gU7-Yx-qoe"/>
+            </connections>
+        </customObject>
+        <customObject id="2Gx-qU-9vG" userLabel="Main View Controller" customClass="GMUMainViewController">
+            <connections>
+                <outlet property="mainWindowController" destination="0zU-A9-IOQ" id="ZaJ-n9-cHO"/>
+                <outlet property="sidebarController" destination="ats-sB-hFA" id="jG2-Ud-pDf"/>
+                <outlet property="view" destination="gSE-7p-Axh" id="Kaz-7E-Mid"/>
             </connections>
         </customObject>
     </objects>

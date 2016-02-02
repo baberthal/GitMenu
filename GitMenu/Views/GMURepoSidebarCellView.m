@@ -7,7 +7,7 @@
 //
 
 #import "GMURepoSidebarCellView.h"
-#import "GMUManagedRepo.h"
+@import GMUDataModel;
 
 @implementation GMURepoSidebarCellView
 

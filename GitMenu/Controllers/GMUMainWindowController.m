@@ -7,11 +7,18 @@
 //
 
 #import "GMUMainWindowController.h"
-#import "GMUCoreDataStackManager.h"
-#import "GMUManagedRepo.h"
+#import "GMUMainViewController.h"
+#import "GMUSidebarController.h"
 #import "GMUUtilities.h"
+#import <GMUDataModel/GMUDataModel.h>
+#import <ObjectiveGit/ObjectiveGit.h>
 
-enum { GMUBackgroundFetchError = 103, GMUFetchFailedError = 104, GMURepoAlreadyExistsError = 105 };
+enum {
+    GMUBackgroundFetchError = 103,
+    GMUFetchFailedError = 104,
+    GMURepoAlreadyExistsError = 105,
+    GMUGetCurrentBranchFailedError = 106,
+};
 
 @interface GMUMainWindowController ()
 
@@ -32,6 +39,8 @@ enum { GMUBackgroundFetchError = 103, GMUFetchFailedError = 104, GMURepoAlreadyE
 @property(weak) IBOutlet NSView *mainContentView;
 
 @property(strong, readonly) NSOpenPanel *openPanel;
+@property(strong) IBOutlet GMUSidebarController *sidebarController;
+@property(strong) IBOutlet GMUMainViewController *mainViewController;
 
 @property(strong, readonly) NSManagedObjectContext *managedObjectContext;
 
@@ -234,6 +243,30 @@ static NSString *MAIN_MENU_ERROR_DOMAIN = @"GMU_MAIN_MENU_ERROR_DOMAIN";
     }
 
     return NO;
+}
+
+#pragma mark - GMURepoDetailViewControllerDelegate
+
+- (void)detailViewControllerChangedCurrentRepo:(GMUManagedRepo *)repo
+{
+    GTRepository *underlyingRepo = repo.underlyingRepo;
+    NSError *error;
+    GTBranch *currentBranch = [underlyingRepo currentBranchWithError:&error];
+    DDLogInfo(@"Current Branch: %@", currentBranch.shortName);
+
+    if (!currentBranch) {
+        NSString *desc =
+              NSLocalizedString(@"Failed to get current branch.", @"Current Branch Failed.");
+        NSDictionary *dict = @{NSLocalizedDescriptionKey : desc, NSUnderlyingErrorKey : error};
+        NSError *repoError = [NSError errorWithDomain:MAIN_MENU_ERROR_DOMAIN
+                                                 code:GMUGetCurrentBranchFailedError
+                                             userInfo:dict];
+        [NSApp presentError:repoError];
+        return;
+    }
+
+    NSString *branchName = currentBranch.shortName;
+    self.toolbarButtonBranch.title = branchName;
 }
 
 @end

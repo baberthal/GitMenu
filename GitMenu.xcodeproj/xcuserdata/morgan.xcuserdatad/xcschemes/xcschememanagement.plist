@@ -7,7 +7,7 @@
 		<key>GMUDataModel.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>17</integer>
 		</dict>
 		<key>GitFinderMenu.xcscheme</key>
 		<dict>
@@ -22,6 +22,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>902CE9731C586C5400B277EC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>902CE97C1C586C5400B277EC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>90451E331C52F7D600ECF88D</key>
 		<dict>
 			<key>primary</key>

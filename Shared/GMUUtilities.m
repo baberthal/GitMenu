@@ -7,7 +7,7 @@
 //
 
 #import "GMUUtilities.h"
-#import "GMUCoreDataStackManager.h"
+#import <GMUDataModel/GMUDataModel.h>
 
 NSManagedObjectContext *GMU_privateQueueContext(NSError *__autoreleasing *error)
 {

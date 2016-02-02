@@ -36,7 +36,8 @@ static NSString *const ErrorDomain = @"CoreDataStackManager";
         return _mom;
     }
 
-    NSURL *momURL = [[NSBundle mainBundle] URLForResource:@"GMUModel" withExtension:@"momd"];
+    NSBundle *sharedBundle = [NSBundle bundleWithIdentifier:kGMUBundleID];
+    NSURL *momURL = [sharedBundle URLForResource:@"GMUModel" withExtension:@"momd"];
     _mom = [[NSManagedObjectModel alloc] initWithContentsOfURL:momURL];
 
     return _mom;

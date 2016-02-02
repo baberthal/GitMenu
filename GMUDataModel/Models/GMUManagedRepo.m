@@ -7,6 +7,8 @@
 //
 
 #import "GMUManagedRepo.h"
+#import "EXTKeyPathCoding.h"
+#import "GMUConstants.h"
 #import <ObjectiveGit/ObjectiveGit.h>
 
 @implementation GMUManagedRepo
@@ -46,8 +48,8 @@
     NSError *error;
     GTRepository *repo = [GTRepository repositoryWithURL:(NSURL *)self.repoURL error:&error];
     if (!repo) {
-        DDLogError(@"Error creating git repository at %@: %@\n%@", self.repoURL,
-                   error.localizedDescription, error.userInfo);
+        NSLog(@"Error creating git repository at %@: %@\n%@", self.repoURL,
+              error.localizedDescription, error.userInfo);
         return nil;
     }
 

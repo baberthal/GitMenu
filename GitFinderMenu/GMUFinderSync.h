@@ -9,6 +9,6 @@
 #import <Cocoa/Cocoa.h>
 #import <FinderSync/FinderSync.h>
 
-@interface FinderSync : FIFinderSync
+@interface GMUFinderSync : FIFinderSync
 
 @end
