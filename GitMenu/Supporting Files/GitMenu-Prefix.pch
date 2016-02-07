@@ -10,7 +10,7 @@
 #define GitMenu_Prefix_pch
 
 #ifdef __OBJC__
-#import <Cocoa/Cocoa.h>
+@import Cocoa;
 #import "JMLLogging.h"
 #import "ZAssert.h"
 #import "EXTKeyPathCoding.h"
