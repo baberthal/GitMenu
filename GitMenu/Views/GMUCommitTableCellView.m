@@ -7,7 +7,7 @@
 //
 
 #import "GMUCommitTableCellView.h"
-#import <ObjectiveGit/ObjectiveGit.h>
+@import ObjectiveGit;
 
 @implementation GMUCommitTableCellView
 

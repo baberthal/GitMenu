@@ -6,16 +6,17 @@
 //  Copyright © 2016 J. Morgan Lieberthal. All rights reserved.
 //
 
-#import "GMURepoSidebarCellView.h"
+#import "GMURepoTableCellView.h"
 @import GMUDataModel;
 
-@implementation GMURepoSidebarCellView
+@implementation GMURepoTableCellView
 
 - (NSImage *)imageForRepo
 {
     NSString *imageName;
 
-    switch (self.repoValue.repoType.integerValue) {
+    GMUManagedRepo *repo = (GMUManagedRepo *)self.objectValue;
+    switch (repo.repoType.integerValue) {
     case GMUManagedRepositoryTypeFork:
         imageName = @"gh-repo-fork";
         break;

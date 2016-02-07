@@ -6,8 +6,6 @@
 //  Copyright © 2016 J. Morgan Lieberthal. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
-
 @class GTCommit;
 
 @interface GMUCommitTableCellView : NSTableCellView
