@@ -11,8 +11,6 @@
 
 #import <Foundation/Foundation.h>
 #import "GMUConstants.h"
-
-#import "JMLLogging.h"
 #import "ZAssert.h"
 
 #endif /* GitFinderMenu_Prefix_pch */
