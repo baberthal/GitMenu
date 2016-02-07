@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9532"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="GMUManageViewController">
+            <connections>
+                <outlet property="addRepoButton" destination="8U7-M1-Y4P" id="1Fe-Qo-2Xz"/>
+                <outlet property="autodetectButton" destination="Sg6-LO-hEX" id="mhJ-d6-sUL"/>
+                <outlet property="repoArrayController" destination="6PG-Ii-99A" id="RC9-8A-p7t"/>
+                <outlet property="repoRightClickMenu" destination="2Uh-Q8-Wym" id="7ec-cg-Dz2"/>
+                <outlet property="tableView" destination="gTW-xF-veI" id="Ftl-Oa-Z5O"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="424"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="auu-uU-uVr">
+                    <rect key="frame" x="18" y="386" width="87" height="18"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Repositories" id="qde-aQ-d3X">
+                        <font key="font" metaFont="systemMedium" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8U7-M1-Y4P">
+                    <rect key="frame" x="276" y="13" width="110" height="32"/>
+                    <buttonCell key="cell" type="push" title="Add a Repo" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ssN-Kq-2YM">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="addRepoButtonClicked:" target="-2" id="Mog-zg-PDJ"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Sg6-LO-hEX">
+                    <rect key="frame" x="14" y="13" width="149" height="32"/>
+                    <buttonCell key="cell" type="push" title="Autodetect Repos" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ivU-wp-v6U">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="autodetectReposButtonClicked:" target="-2" id="Y3w-Ts-Jkn"/>
+                    </connections>
+                </button>
+                <scrollView autohidesScrollers="YES" horizontalLineScroll="25" horizontalPageScroll="10" verticalLineScroll="25" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rcz-6K-IGp">
+                    <rect key="frame" x="20" y="169" width="360" height="209"/>
+                    <clipView key="contentView" drawsBackground="NO" id="LzX-39-Oob">
+                        <rect key="frame" x="1" y="1" width="358" height="192"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="23" rowSizeStyle="automatic" viewBased="YES" id="gTW-xF-veI">
+                                <rect key="frame" x="0.0" y="0.0" width="359" height="192"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <size key="intercellSpacing" width="3" height="2"/>
+                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                <tableColumns>
+                                    <tableColumn width="355" minWidth="40" maxWidth="1000" id="cOf-NC-pc8">
+                                        <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                        </tableHeaderCell>
+                                        <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" title="Text Cell" id="yat-OK-w7n">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                        <prototypeCellViews>
+                                            <tableCellView id="ZMw-ah-9ZL" customClass="GMURepoTableCellView">
+                                                <rect key="frame" x="1" y="1" width="355" height="23"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hes-6X-48q">
+                                                        <rect key="frame" x="4" y="1" width="18" height="18"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="18" id="2NT-tM-VTr"/>
+                                                            <constraint firstAttribute="height" constant="18" id="xRS-kj-EFM"/>
+                                                        </constraints>
+                                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="gh-repo-default" id="tKZ-0a-c2B"/>
+                                                        <connections>
+                                                            <binding destination="ZMw-ah-9ZL" name="value" keyPath="imageForRepo" id="kqI-vz-kBq"/>
+                                                        </connections>
+                                                    </imageView>
+                                                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="D8J-Dm-6BA">
+                                                        <rect key="frame" x="28" y="3" width="97" height="17"/>
+                                                        <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="0yu-xX-LG3">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                        <connections>
+                                                            <binding destination="ZMw-ah-9ZL" name="value" keyPath="objectValue.repoName" id="6a9-AI-Z8e"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="D8J-Dm-6BA" secondAttribute="bottom" constant="3" id="ZIj-Ag-DoG"/>
+                                                    <constraint firstItem="D8J-Dm-6BA" firstAttribute="leading" secondItem="hes-6X-48q" secondAttribute="trailing" constant="8" id="j8V-hE-Bfd"/>
+                                                    <constraint firstItem="hes-6X-48q" firstAttribute="top" secondItem="ZMw-ah-9ZL" secondAttribute="top" constant="4" id="oKn-wa-G3i"/>
+                                                    <constraint firstAttribute="bottom" secondItem="hes-6X-48q" secondAttribute="bottom" constant="1" id="pU9-ca-9yK"/>
+                                                    <constraint firstItem="hes-6X-48q" firstAttribute="leading" secondItem="ZMw-ah-9ZL" secondAttribute="leading" constant="4" id="wUP-Xl-nkt"/>
+                                                    <constraint firstItem="D8J-Dm-6BA" firstAttribute="top" secondItem="ZMw-ah-9ZL" secondAttribute="top" constant="3" id="xhC-cA-zQG"/>
+                                                </constraints>
+                                            </tableCellView>
+                                        </prototypeCellViews>
+                                    </tableColumn>
+                                </tableColumns>
+                                <connections>
+                                    <binding destination="6PG-Ii-99A" name="content" keyPath="arrangedObjects" id="lnZ-vR-1Wz"/>
+                                    <binding destination="6PG-Ii-99A" name="selectionIndexes" keyPath="selectionIndexes" previousBinding="lnZ-vR-1Wz" id="LbM-ik-Efv"/>
+                                    <outlet property="delegate" destination="-2" id="Z11-aW-SvV"/>
+                                    <outlet property="menu" destination="2Uh-Q8-Wym" id="wfz-hN-SWx"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <nil key="backgroundColor"/>
+                    </clipView>
+                    <scroller key="horizontalScroller" verticalHuggingPriority="750" doubleValue="0.5" horizontal="YES" id="2K4-UZ-9Xs">
+                        <rect key="frame" x="1" y="193" width="358" height="15"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="hcL-Jy-OS6">
+                        <rect key="frame" x="224" y="17" width="15" height="102"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+                <box title="Box" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="M1h-33-1Lx">
+                    <rect key="frame" x="17" y="57" width="366" height="104"/>
+                    <view key="contentView" id="Nkz-VK-VJA">
+                        <rect key="frame" x="1" y="1" width="364" height="88"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7GW-Ik-0HK">
+                                <rect key="frame" x="18" y="62" width="33" height="14"/>
+                                <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Path:" id="fBO-dP-A0e">
+                                    <font key="font" metaFont="systemSemibold" size="11"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uxX-sS-7kT">
+                                <rect key="frame" x="18" y="36" width="106" height="14"/>
+                                <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Git Directory Path:" id="7EU-ev-tcL">
+                                    <font key="font" metaFont="systemSemibold" size="11"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2vN-rT-KfE">
+                                <rect key="frame" x="55" y="62" width="33" height="14"/>
+                                <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="tFF-t1-xHQ">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="6PG-Ii-99A" name="value" keyPath="selection.displayPath" id="z4b-o9-fLa"/>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="M9M-tD-cN8">
+                                <rect key="frame" x="128" y="36" width="33" height="14"/>
+                                <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="Cur-yR-ek6">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="6PG-Ii-99A" name="value" keyPath="selection.displayGitDirectoryPath" id="qqw-YI-98F"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="7GW-Ik-0HK" firstAttribute="leading" secondItem="Nkz-VK-VJA" secondAttribute="leading" constant="20" id="364-eq-3jO"/>
+                            <constraint firstItem="2vN-rT-KfE" firstAttribute="leading" secondItem="7GW-Ik-0HK" secondAttribute="trailing" constant="8" id="5QB-9l-yWC"/>
+                            <constraint firstItem="M9M-tD-cN8" firstAttribute="baseline" secondItem="uxX-sS-7kT" secondAttribute="baseline" id="LYT-oD-5rt"/>
+                            <constraint firstItem="uxX-sS-7kT" firstAttribute="leading" secondItem="Nkz-VK-VJA" secondAttribute="leading" constant="20" id="dia-Ze-CBP"/>
+                            <constraint firstItem="M9M-tD-cN8" firstAttribute="leading" secondItem="uxX-sS-7kT" secondAttribute="trailing" constant="8" id="gCc-qe-waB"/>
+                            <constraint firstItem="uxX-sS-7kT" firstAttribute="top" secondItem="7GW-Ik-0HK" secondAttribute="bottom" constant="12" id="hxH-fm-qcz"/>
+                            <constraint firstItem="7GW-Ik-0HK" firstAttribute="top" secondItem="Nkz-VK-VJA" secondAttribute="top" constant="12" id="kKu-mY-sGa"/>
+                            <constraint firstItem="2vN-rT-KfE" firstAttribute="baseline" secondItem="7GW-Ik-0HK" secondAttribute="baseline" id="krf-5c-6du"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="1xb-dV-Wg7"/>
+                    </constraints>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <binding destination="6PG-Ii-99A" name="title" keyPath="selection.repoName" id="Wjp-yn-fS1"/>
+                    </connections>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Rcz-6K-IGp" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="19x-33-UYj"/>
+                <constraint firstItem="M1h-33-1Lx" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="1De-PS-H3o"/>
+                <constraint firstAttribute="bottom" secondItem="Sg6-LO-hEX" secondAttribute="bottom" constant="20" id="382-qx-Xu9"/>
+                <constraint firstItem="Sg6-LO-hEX" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="6eq-Ot-iVj"/>
+                <constraint firstItem="Rcz-6K-IGp" firstAttribute="top" secondItem="auu-uU-uVr" secondAttribute="bottom" constant="8" id="6xV-P2-8PK"/>
+                <constraint firstItem="auu-uU-uVr" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="AbA-60-Jdu"/>
+                <constraint firstAttribute="trailing" secondItem="8U7-M1-Y4P" secondAttribute="trailing" constant="20" id="EOW-Ax-keP"/>
+                <constraint firstAttribute="bottom" secondItem="8U7-M1-Y4P" secondAttribute="bottom" constant="20" id="UNb-P0-nCf"/>
+                <constraint firstItem="auu-uU-uVr" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="fbE-UK-cHl"/>
+                <constraint firstAttribute="trailing" secondItem="Rcz-6K-IGp" secondAttribute="trailing" constant="20" id="mP4-VO-zKb"/>
+                <constraint firstAttribute="trailing" secondItem="M1h-33-1Lx" secondAttribute="trailing" constant="20" id="t6C-Mr-Ipi"/>
+                <constraint firstItem="M1h-33-1Lx" firstAttribute="top" secondItem="Rcz-6K-IGp" secondAttribute="bottom" constant="8" id="tEs-Eg-4du"/>
+                <constraint firstItem="Sg6-LO-hEX" firstAttribute="top" secondItem="M1h-33-1Lx" secondAttribute="bottom" constant="20" id="tJT-UY-9HP"/>
+            </constraints>
+            <point key="canvasLocation" x="159" y="237"/>
+        </customView>
+        <menu id="2Uh-Q8-Wym">
+            <items>
+                <menuItem title="Reveal in Finder..." id="l58-wx-Gk9">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="revealRepoInFinder:" target="-2" id="V7m-JP-eHK"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Reveal in Terminal..." id="OUE-SI-Lpl">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="revealRepoInTerminal:" target="-2" id="f7G-6g-VcP"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="Fqq-zp-h8l"/>
+                <menuItem title="Details..." id="P8g-kn-m0O">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="showRepoDetails:" target="-2" id="m0T-vU-JhF"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="435.5" y="132.5"/>
+        </menu>
+        <arrayController mode="entity" entityName="ManagedRepository" automaticallyPreparesContent="YES" id="6PG-Ii-99A">
+            <connections>
+                <binding destination="-2" name="managedObjectContext" keyPath="self.managedObjectContext" id="hnz-T9-nef"/>
+            </connections>
+        </arrayController>
+    </objects>
+    <resources>
+        <image name="gh-repo-default" width="24" height="24"/>
+    </resources>
+</document>

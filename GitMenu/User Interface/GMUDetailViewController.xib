@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9532"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="GMUDetailViewController">
+            <connections>
+                <outlet property="commitsView" destination="Y86-WY-Zms" id="tHH-Yq-WgE"/>
+                <outlet property="filesOrDiffsView" destination="c4s-YU-H9s" id="gRI-Qh-RhY"/>
+                <outlet property="generalInfoView" destination="thh-vb-Ez5" id="XWp-Y1-TNu"/>
+                <outlet property="horizontalSplitView" destination="Mie-92-k6p" id="9sR-Le-A3J"/>
+                <outlet property="repoPathControl" destination="jpG-p4-l8l" id="3oE-Hy-MI3"/>
+                <outlet property="verticalSplitView" destination="8df-IK-lBo" id="6qy-QF-Gfj"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="800" height="620"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="QDk-WQ-mab" customClass="JMLColoredView">
+                    <rect key="frame" x="0.0" y="596" width="800" height="24"/>
+                    <subviews>
+                        <pathControl verticalHuggingPriority="750" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jpG-p4-l8l">
+                            <rect key="frame" x="2" y="2" width="177" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="hB4-5F-f4O"/>
+                            </constraints>
+                            <pathCell key="cell" controlSize="small" selectable="YES" editable="YES" alignment="left" id="xVh-wD-QSY">
+                                <font key="font" metaFont="smallSystem"/>
+                                <url key="url" string="file://localhost/Applications/"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </pathCell>
+                        </pathControl>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="FgB-37-XIc"/>
+                        <constraint firstAttribute="bottom" secondItem="jpG-p4-l8l" secondAttribute="bottom" constant="2" id="LJi-zC-aVo"/>
+                        <constraint firstItem="jpG-p4-l8l" firstAttribute="top" secondItem="QDk-WQ-mab" secondAttribute="top" constant="2" id="Rx1-vk-fxe"/>
+                        <constraint firstItem="jpG-p4-l8l" firstAttribute="leading" secondItem="QDk-WQ-mab" secondAttribute="leading" constant="2" id="gVO-y5-kfv"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customView>
+                <splitView arrangesAllSubviews="NO" dividerStyle="paneSplitter" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8df-IK-lBo">
+                    <rect key="frame" x="0.0" y="0.0" width="800" height="596"/>
+                    <subviews>
+                        <customView id="4VK-fd-ihe">
+                            <rect key="frame" x="0.0" y="0.0" width="398" height="596"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <splitView arrangesAllSubviews="NO" dividerStyle="paneSplitter" translatesAutoresizingMaskIntoConstraints="NO" id="Mie-92-k6p">
+                                    <rect key="frame" x="0.0" y="0.0" width="398" height="596"/>
+                                    <subviews>
+                                        <customView id="thh-vb-Ez5">
+                                            <rect key="frame" x="0.0" y="0.0" width="398" height="216"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LRz-Ja-hhF">
+                                                    <rect key="frame" x="18" y="178" width="41" height="18"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="sze-Lh-lNO">
+                                                        <font key="font" metaFont="systemSemibold" size="14"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                    <connections>
+                                                        <binding destination="-2" name="value" keyPath="self.representedRepo.displayName" id="2Bb-uX-5Av"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="LRz-Ja-hhF" firstAttribute="leading" secondItem="thh-vb-Ez5" secondAttribute="leading" constant="20" id="TQE-bf-SBs"/>
+                                                <constraint firstItem="LRz-Ja-hhF" firstAttribute="top" secondItem="thh-vb-Ez5" secondAttribute="top" constant="20" id="TQM-Hw-kHM"/>
+                                            </constraints>
+                                        </customView>
+                                        <customView fixedFrame="YES" id="Y86-WY-Zms">
+                                            <rect key="frame" x="0.0" y="226" width="398" height="370"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </customView>
+                                    </subviews>
+                                    <holdingPriorities>
+                                        <real value="250"/>
+                                        <real value="250"/>
+                                    </holdingPriorities>
+                                </splitView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Mie-92-k6p" firstAttribute="top" secondItem="4VK-fd-ihe" secondAttribute="top" id="6Fq-M3-0Pb"/>
+                                <constraint firstAttribute="trailing" secondItem="Mie-92-k6p" secondAttribute="trailing" id="c4K-jb-7if"/>
+                                <constraint firstItem="Mie-92-k6p" firstAttribute="leading" secondItem="4VK-fd-ihe" secondAttribute="leading" id="js3-YN-ld5"/>
+                                <constraint firstAttribute="bottom" secondItem="Mie-92-k6p" secondAttribute="bottom" id="nbg-1A-yDd"/>
+                            </constraints>
+                        </customView>
+                        <customView fixedFrame="YES" id="c4s-YU-H9s">
+                            <rect key="frame" x="408" y="0.0" width="392" height="596"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </customView>
+                    </subviews>
+                    <holdingPriorities>
+                        <real value="250"/>
+                        <real value="250"/>
+                    </holdingPriorities>
+                </splitView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="8df-IK-lBo" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="Ios-E8-Lgm"/>
+                <constraint firstItem="8df-IK-lBo" firstAttribute="top" secondItem="QDk-WQ-mab" secondAttribute="bottom" id="XaR-so-NPb"/>
+                <constraint firstAttribute="trailing" secondItem="QDk-WQ-mab" secondAttribute="trailing" id="bE2-tZ-VMh"/>
+                <constraint firstAttribute="bottom" secondItem="8df-IK-lBo" secondAttribute="bottom" id="ioS-fQ-VAi"/>
+                <constraint firstItem="QDk-WQ-mab" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="ljm-Rv-xHo"/>
+                <constraint firstAttribute="trailing" secondItem="8df-IK-lBo" secondAttribute="trailing" id="mKW-Lv-FKe"/>
+                <constraint firstItem="QDk-WQ-mab" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="mhx-Na-pza"/>
+            </constraints>
+            <point key="canvasLocation" x="481" y="390"/>
+        </customView>
+    </objects>
+</document>
