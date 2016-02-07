@@ -9,6 +9,10 @@
 #import <Cocoa/Cocoa.h>
 #import <FinderSync/FinderSync.h>
 
+@class GMUConfiguration;
+
 @interface GMUFinderSync : FIFinderSync
+
+@property(nonatomic, readonly) GMUConfiguration *configuration;
 
 @end
