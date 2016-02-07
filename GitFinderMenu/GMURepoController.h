@@ -8,12 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@class GTRepository, GMUManagedRepo;
+@class GTRepository, GMUManagedRepo, GMUConfiguration;
 
 @interface GMURepoController : NSObject
 
 @property(strong) NSURL *rootURL;
 @property(strong) GTRepository *repository;
+@property(weak) GMUConfiguration *configuration;
 
 - (instancetype)init NS_UNAVAILABLE;
 
@@ -35,4 +36,32 @@
 /// Returns a repository controller for the given repository.
 + (instancetype)controllerWithManagedRepo:(GMUManagedRepo *)managedRepo;
 
+/**
+ *  Returns whether or not the controller is equal to another, in terms of the repository it
+ * controls
+ *
+ *  @param otherController the controller to compare
+ *
+ *  @return YES if they are equal, NO otherwise
+ */
+- (BOOL)isEqualToRepoController:(GMURepoController *)otherController;
+
+/**
+ *  Returns whether or not a controller is valid for a given URL
+ *
+ *  @param url the url to query
+ *
+ *  @return YES if it is valid, NO otherwise
+ */
+- (BOOL)isValidForURL:(NSURL *)url;
+
+- (NSString *)badgeIdentifierForURL:(NSURL *)url;
+
 @end
+
+extern NSString *const GMUBadgeID_New;
+extern NSString *const GMUBadgeID_Dirty;
+extern NSString *const GMUBadgeID_Clean;
+extern NSString *const GMUBadgeID_Renamed;
+extern NSString *const GMUBadgeID_Ignored;
+extern NSString *const GMUBadgeID_Conflicted;
