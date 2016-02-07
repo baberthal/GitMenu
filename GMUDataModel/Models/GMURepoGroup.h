@@ -6,15 +6,14 @@
 //  Copyright © 2016 J. Morgan Lieberthal. All rights reserved.
 //
 
-#import <CoreData/CoreData.h>
-#import <Foundation/Foundation.h>
+#import "GMUItem.h"
 
 @class GMUManagedRepo;
 @class GTRepository;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GMURepoGroup : NSManagedObject
+@interface GMURepoGroup : GMUItem
 
 @end
 

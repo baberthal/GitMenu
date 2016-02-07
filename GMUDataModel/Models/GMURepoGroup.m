@@ -11,6 +11,19 @@
 
 @implementation GMURepoGroup
 
-// Insert code here to add functionality to your managed object subclass
+- (NSString *)displayName
+{
+    return (self.groupName).uppercaseString;
+}
+
+- (NSOrderedSet<GMUItem *> *)children
+{
+    return self.repositories;
+}
+
+- (NSNumber *)isGroupItem
+{
+    return @YES;
+}
 
 @end

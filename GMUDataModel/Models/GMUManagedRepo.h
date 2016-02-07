@@ -6,8 +6,7 @@
 //  Copyright © 2016 J. Morgan Lieberthal. All rights reserved.
 //
 
-#import <CoreData/CoreData.h>
-#import <Foundation/Foundation.h>
+#import "GMUItem.h"
 
 typedef NS_ENUM(NSInteger, GMUManagedRepositoryType) {
     GMUManagedRepositoryTypeUnknown = -1,
@@ -21,7 +20,7 @@ typedef NS_ENUM(NSInteger, GMUManagedRepositoryType) {
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GMUManagedRepo : NSManagedObject
+@interface GMUManagedRepo : GMUItem
 
 @property(readonly, strong) GTRepository *underlyingRepo;
 
