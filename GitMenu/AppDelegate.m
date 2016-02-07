@@ -13,7 +13,7 @@
 
 @property(weak) IBOutlet NSWindow *window;
 @property(weak) IBOutlet NSTextField *myNumberField;
-@property(strong, readonly) NSUserDefaults *sharedUserDefaults;
+@property(atomic, strong, readonly) NSUserDefaults *sharedUserDefaults;
 
 @end
 
@@ -43,7 +43,7 @@
 {
     NSInteger myNumber = [self.sharedUserDefaults integerForKey:@"MyNumberKey"];
     if (myNumber) {
-        [self.myNumberField setIntegerValue:myNumber];
+        (self.myNumberField).integerValue = myNumber;
     }
 }
 
@@ -54,7 +54,7 @@
 
 - (IBAction)saveButtonHit:(id)sender
 {
-    [self.sharedUserDefaults setInteger:[self.myNumberField integerValue] forKey:@"MyNumberKey"];
+    [self.sharedUserDefaults setInteger:(self.myNumberField).integerValue forKey:@"MyNumberKey"];
     [self.sharedUserDefaults synchronize];
 }
 
