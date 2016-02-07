@@ -18,6 +18,7 @@ static NSString *const ErrorDomain = @"CoreDataStackManager";
 @synthesize persistentStoreCoordinator = _coordinator;
 @synthesize sharedContainerDirectory = _sharedContainerDirectory;
 @synthesize storeURL = _storeURL;
+@synthesize storeType = _storeType;
 
 + (instancetype)sharedManager
 {
@@ -64,7 +65,7 @@ static NSString *const ErrorDomain = @"CoreDataStackManager";
 
     NSError *error;
 
-    if (![psc addPersistentStoreWithType:NSSQLiteStoreType
+    if (![psc addPersistentStoreWithType:self.storeType
                            configuration:nil
                                      URL:url
                                  options:options
@@ -139,6 +140,30 @@ static NSString *const ErrorDomain = @"CoreDataStackManager";
     _storeURL = [self.sharedContainerDirectory URLByAppendingPathComponent:GMUMainStoreFilename];
 
     return _storeURL;
+}
+
+- (NSString *)storeType
+{
+    if (_storeType) {
+        return _storeType;
+    }
+
+    _storeType = NSSQLiteStoreType;
+
+    return _storeType;
+}
+
+- (void)setStoreType:(NSString *)storeType
+{
+    NSArray *allowedTypes =
+          @[ NSSQLiteStoreType, NSXMLStoreType, NSBinaryStoreType, NSInMemoryStoreType ];
+
+    if (![allowedTypes containsObject:storeType]) {
+        return;
+    }
+
+    _storeType = storeType;
+    _coordinator = nil;
 }
 
 @end

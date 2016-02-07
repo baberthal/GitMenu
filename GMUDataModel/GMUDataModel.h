@@ -15,6 +15,8 @@ FOUNDATION_EXPORT double GMUDataModelVersionNumber;
 FOUNDATION_EXPORT const unsigned char GMUDataModelVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like
+#import <GMUDataModel/GMUConfiguration.h>
 #import <GMUDataModel/GMUCoreDataStackManager.h>
+#import <GMUDataModel/GMUFavorites.h>
 #import <GMUDataModel/GMUManagedRepo.h>
 #import <GMUDataModel/GMURepoGroup.h>

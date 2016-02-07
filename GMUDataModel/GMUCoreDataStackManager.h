@@ -24,4 +24,9 @@
 /// URL for the shared application group container directory.
 @property(nonatomic, readonly) NSURL *sharedContainerDirectory;
 
+/**
+ *  Persistent store type.
+ */
+@property(readonly) NSString *storeType;
+
 @end
