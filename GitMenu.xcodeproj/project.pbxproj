@@ -7,17 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		076A4A5966D0FFD0BB56854E /* Pods_Git_GMUDataModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E81490DE5FC157C937A9E59 /* Pods_Git_GMUDataModel.framework */; };
 		22542754275B61B9B5A23866 /* Pods_GitMenuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41807AF6F06E7C019ADB272E /* Pods_GitMenuTests.framework */; };
+		30F55E8EF5987740B159C990 /* Pods_Git_GitFinderMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3A2C776FE6879B0FF5DCB3 /* Pods_Git_GitFinderMenu.framework */; };
 		87048197B9A11D3433F34116 /* Pods_GMUDataModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42C748C7C292A4B883D835B /* Pods_GMUDataModel.framework */; };
-		902CE92D1C53595600B277EC /* JMLLoggerColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 907C8BC51C52E0C900A09E55 /* JMLLoggerColors.m */; };
-		902CE9431C537AB900B277EC /* GMUMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 902CE9421C537AB900B277EC /* GMUMainWindowController.m */; };
-		902CE9461C5809ED00B277EC /* GMUSidebarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 902CE9451C5809ED00B277EC /* GMUSidebarController.m */; };
-		902CE94A1C581AF900B277EC /* GMURepoSidebarCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 902CE9491C581AF900B277EC /* GMURepoSidebarCellView.m */; };
+		9008D69C1C63AC0A00C5FC99 /* JMLSubpaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 9008D69B1C63AC0A00C5FC99 /* JMLSubpaths.m */; };
+		9008D6A31C63B21C00C5FC99 /* JMLLoggerColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 9008D6A01C63B21B00C5FC99 /* JMLLoggerColors.m */; };
+		9008D6A41C63B22400C5FC99 /* JMLLoggerColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 9008D6A01C63B21B00C5FC99 /* JMLLoggerColors.m */; };
+		9008D6A51C63B22500C5FC99 /* JMLLoggerColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 9008D6A01C63B21B00C5FC99 /* JMLLoggerColors.m */; };
+		9008D6A81C640CF500C5FC99 /* GMUSidebarTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9008D6A71C640CF500C5FC99 /* GMUSidebarTableCellView.m */; };
+		9008D6AB1C64193B00C5FC99 /* JMLColoredView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9008D6AA1C64193B00C5FC99 /* JMLColoredView.m */; };
+		900F9A531C60683800968E24 /* GMUTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900F9A521C60683800968E24 /* GMUTabViewController.m */; };
+		900F9A5F1C606B2200968E24 /* GMUManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900F9A5D1C606B2200968E24 /* GMUManageViewController.m */; };
+		900F9A601C606B2200968E24 /* GMUManageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 900F9A5E1C606B2200968E24 /* GMUManageViewController.xib */; };
+		900F9A641C606B3200968E24 /* GMUConfigureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900F9A621C606B3200968E24 /* GMUConfigureViewController.m */; };
+		900F9A651C606B3200968E24 /* GMUConfigureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 900F9A631C606B3200968E24 /* GMUConfigureViewController.xib */; };
+		900F9A6A1C607ADB00968E24 /* GMURepoTableRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 900F9A691C607ADB00968E24 /* GMURepoTableRowView.m */; };
+		900F9A721C60A39500968E24 /* OpenInTerminal.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 900F9A701C60A39500968E24 /* OpenInTerminal.scpt */; };
+		900F9A731C60A39500968E24 /* OpenIniTerm.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 900F9A711C60A39500968E24 /* OpenIniTerm.scpt */; };
+		900F9A741C60A3A500968E24 /* OpenInTerminal.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 900F9A701C60A39500968E24 /* OpenInTerminal.scpt */; };
+		900F9A751C60A3A800968E24 /* OpenIniTerm.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 900F9A711C60A39500968E24 /* OpenIniTerm.scpt */; };
+		900F9A781C61636200968E24 /* GMURevealInTerminalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900F9A771C61636200968E24 /* GMURevealInTerminalController.m */; };
+		900F9A7B1C61806200968E24 /* NSColor+Solarized.m in Sources */ = {isa = PBXBuildFile; fileRef = 900F9A7A1C61806200968E24 /* NSColor+Solarized.m */; };
+		900F9A901C6188F500968E24 /* Divider.tif in Resources */ = {isa = PBXBuildFile; fileRef = 900F9A8F1C6188F500968E24 /* Divider.tif */; };
+		902868DB1C61BC3600482E16 /* GMUImageTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 902868D91C61BC3600482E16 /* GMUImageTransformer.h */; };
+		902868DC1C61BC3600482E16 /* GMUImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 902868DA1C61BC3600482E16 /* GMUImageTransformer.m */; };
+		902868E51C61BF9900482E16 /* GMUConfiguration+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 902868DD1C61BF9900482E16 /* GMUConfiguration+CoreDataProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		902868E61C61BF9900482E16 /* GMUConfiguration+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 902868DE1C61BF9900482E16 /* GMUConfiguration+CoreDataProperties.m */; };
+		902868E71C61BF9900482E16 /* GMUConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 902868DF1C61BF9900482E16 /* GMUConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		902868E81C61BF9900482E16 /* GMUConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 902868E01C61BF9900482E16 /* GMUConfiguration.m */; };
+		902868F01C61C75A00482E16 /* GMUCoreDataManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 902868EF1C61C75A00482E16 /* GMUCoreDataManagerSpec.m */; };
+		902CE94A1C581AF900B277EC /* GMURepoTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 902CE9491C581AF900B277EC /* GMURepoTableCellView.m */; };
 		902CE9511C5823BB00B277EC /* ObjectiveGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90451E651C52FCF900ECF88D /* ObjectiveGit.framework */; };
 		902CE9551C58240A00B277EC /* ObjectiveGit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90451E651C52FCF900ECF88D /* ObjectiveGit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		902CE9591C5830FA00B277EC /* GMUUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 902CE9581C5830FA00B277EC /* GMUUtilities.m */; };
-		902CE96A1C58405800B277EC /* GMURepoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 902CE9681C58405800B277EC /* GMURepoDetailViewController.m */; };
-		902CE96B1C58405800B277EC /* GMURepoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 902CE9691C58405800B277EC /* GMURepoDetailViewController.xib */; };
 		902CE96E1C58491F00B277EC /* GMUCommitTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 902CE96D1C58491F00B277EC /* GMUCommitTableCellView.m */; };
 		902CE9771C586C5400B277EC /* GMUDataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 902CE9761C586C5400B277EC /* GMUDataModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		902CE97E1C586C5400B277EC /* GMUDataModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 902CE9741C586C5400B277EC /* GMUDataModel.framework */; };
@@ -30,12 +53,10 @@
 		90451E841C5336ED00ECF88D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90451E811C5336ED00ECF88D /* main.m */; };
 		90451E8B1C5337FB00ECF88D /* GMUConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 90451E891C5337FB00ECF88D /* GMUConstants.m */; };
 		90451E8C1C5337FB00ECF88D /* GMUConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 90451E891C5337FB00ECF88D /* GMUConstants.m */; };
-		90451EA61C533AD100ECF88D /* GMUMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90451EA41C533AD100ECF88D /* GMUMainViewController.m */; };
 		9065B96D1C52E00500854414 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9065B96C1C52E00500854414 /* AppDelegate.m */; };
 		9065B9721C52E00500854414 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9065B9711C52E00500854414 /* Assets.xcassets */; };
 		9065B9751C52E00500854414 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9065B9731C52E00500854414 /* MainMenu.xib */; };
 		9065B9801C52E00500854414 /* GitMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9065B97F1C52E00500854414 /* GitMenuTests.m */; };
-		907C8BC91C52E0C900A09E55 /* JMLLoggerColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 907C8BC51C52E0C900A09E55 /* JMLLoggerColors.m */; };
 		907C8BD81C52E2BC00A09E55 /* GMUFinderSync.m in Sources */ = {isa = PBXBuildFile; fileRef = 907C8BD71C52E2BC00A09E55 /* GMUFinderSync.m */; };
 		907C8BDC1C52E2BC00A09E55 /* GitFinderMenu.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 907C8BD21C52E2BC00A09E55 /* GitFinderMenu.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9090BF641C586CF100DD1DC0 /* GMUModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9090BF571C586CF100DD1DC0 /* GMUModel.xcdatamodeld */; };
@@ -54,8 +75,21 @@
 		9090BF7C1C586E7500DD1DC0 /* GMUDataModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 902CE9741C586C5400B277EC /* GMUDataModel.framework */; };
 		9090BF7E1C586EFC00DD1DC0 /* GMUDataModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 902CE9741C586C5400B277EC /* GMUDataModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9090BF7F1C5872B900DD1DC0 /* GMUModel.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 9090BF571C586CF100DD1DC0 /* GMUModel.xcdatamodeld */; };
+		90F023251C63219200C68A76 /* GMUDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F023231C63219200C68A76 /* GMUDetailViewController.m */; };
+		90F023261C63219200C68A76 /* GMUDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F023241C63219200C68A76 /* GMUDetailViewController.xib */; };
+		90F023321C6322B900C68A76 /* GMUDetailWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F023301C6322B900C68A76 /* GMUDetailWindowController.m */; };
+		90F023331C6322B900C68A76 /* GMUDetailWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F023311C6322B900C68A76 /* GMUDetailWindowController.xib */; };
+		90F0233B1C6348DF00C68A76 /* GMUItem+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 90F023371C6348DF00C68A76 /* GMUItem+CoreDataProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90F0233C1C6348DF00C68A76 /* GMUItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F023381C6348DF00C68A76 /* GMUItem+CoreDataProperties.m */; };
+		90F0233D1C6348DF00C68A76 /* GMUItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 90F023391C6348DF00C68A76 /* GMUItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90F0233E1C6348DF00C68A76 /* GMUItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0233A1C6348DF00C68A76 /* GMUItem.m */; };
+		90F023431C634D1E00C68A76 /* GMUFavorites+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 90F0233F1C634D1E00C68A76 /* GMUFavorites+CoreDataProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90F023441C634D1E00C68A76 /* GMUFavorites+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F023401C634D1E00C68A76 /* GMUFavorites+CoreDataProperties.m */; };
+		90F023451C634D1E00C68A76 /* GMUFavorites.h in Headers */ = {isa = PBXBuildFile; fileRef = 90F023411C634D1E00C68A76 /* GMUFavorites.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90F023461C634D1E00C68A76 /* GMUFavorites.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F023421C634D1E00C68A76 /* GMUFavorites.m */; };
 		9495562233FF15D249FA2DBF /* Pods_GMUDataModelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1318289189F50126E63A82 /* Pods_GMUDataModelTests.framework */; };
 		CFC65C84D9AD7D43995DF2A7 /* Pods_GitFinderMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06BB035D8F63A0D6019B6FA1 /* Pods_GitFinderMenu.framework */; };
+		E56A2A4275610998F03287FD /* Pods_Git_GitMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DC6703C01F071AE60534E9 /* Pods_Git_GitMenu.framework */; };
 		FB699C8144075BBE721B3B7B /* Pods_GitMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D6252744E878CE5FAFB5DE4 /* Pods_GitMenu.framework */; };
 /* End PBXBuildFile section */
 
@@ -174,37 +208,73 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		90CAD7201C62BF1D007605D7 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		04DC6703C01F071AE60534E9 /* Pods_Git_GitMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Git_GitMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		06BB035D8F63A0D6019B6FA1 /* Pods_GitFinderMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitFinderMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B1318289189F50126E63A82 /* Pods_GMUDataModelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMUDataModelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D6252744E878CE5FAFB5DE4 /* Pods_GitMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E81490DE5FC157C937A9E59 /* Pods_Git_GMUDataModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Git_GMUDataModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F7CA9FA3CA930C80100B68D /* Pods-Git-GMUDataModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Git-GMUDataModel.release.xcconfig"; path = "Pods/Target Support Files/Pods-Git-GMUDataModel/Pods-Git-GMUDataModel.release.xcconfig"; sourceTree = "<group>"; };
 		41807AF6F06E7C019ADB272E /* Pods_GitMenuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitMenuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B051072050FE6E44C0BA12 /* Pods-GMUDataModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMUDataModel.release.xcconfig"; path = "Pods/Target Support Files/Pods-GMUDataModel/Pods-GMUDataModel.release.xcconfig"; sourceTree = "<group>"; };
+		4317576AB6CD3B5E84BFB0FE /* Pods-Git-GMUDataModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Git-GMUDataModel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Git-GMUDataModel/Pods-Git-GMUDataModel.debug.xcconfig"; sourceTree = "<group>"; };
+		4C3A2C776FE6879B0FF5DCB3 /* Pods_Git_GitFinderMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Git_GitFinderMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F49D96DE631F07FE727D2C4 /* Pods-Git-GitFinderMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Git-GitFinderMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Git-GitFinderMenu/Pods-Git-GitFinderMenu.debug.xcconfig"; sourceTree = "<group>"; };
 		8B3675058FB2876D5B1D052C /* Pods-GMUDataModelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMUDataModelTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GMUDataModelTests/Pods-GMUDataModelTests.release.xcconfig"; sourceTree = "<group>"; };
+		8FD027E930278F7CE39E0905 /* Pods-Git-GitMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Git-GitMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Git-GitMenu/Pods-Git-GitMenu.release.xcconfig"; sourceTree = "<group>"; };
+		9008D69A1C63AC0A00C5FC99 /* JMLSubpaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMLSubpaths.h; sourceTree = "<group>"; };
+		9008D69B1C63AC0A00C5FC99 /* JMLSubpaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMLSubpaths.m; sourceTree = "<group>"; };
+		9008D69F1C63B21B00C5FC99 /* JMLLoggerColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JMLLoggerColors.h; path = ../SharedCode/JMLLoggerColors.h; sourceTree = "<group>"; };
+		9008D6A01C63B21B00C5FC99 /* JMLLoggerColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JMLLoggerColors.m; path = ../SharedCode/JMLLoggerColors.m; sourceTree = "<group>"; };
+		9008D6A11C63B21B00C5FC99 /* JMLLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JMLLogging.h; path = ../SharedCode/JMLLogging.h; sourceTree = "<group>"; };
+		9008D6A21C63B21C00C5FC99 /* ZAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZAssert.h; path = ../SharedCode/ZAssert.h; sourceTree = "<group>"; };
+		9008D6A61C640CF500C5FC99 /* GMUSidebarTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUSidebarTableCellView.h; sourceTree = "<group>"; };
+		9008D6A71C640CF500C5FC99 /* GMUSidebarTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUSidebarTableCellView.m; sourceTree = "<group>"; };
+		9008D6A91C64193B00C5FC99 /* JMLColoredView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMLColoredView.h; sourceTree = "<group>"; };
+		9008D6AA1C64193B00C5FC99 /* JMLColoredView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMLColoredView.m; sourceTree = "<group>"; };
 		900D34031C52F60C007D6A46 /* GitFinderMenu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GitFinderMenu-Prefix.pch"; sourceTree = "<group>"; };
-		902CE9411C537AB900B277EC /* GMUMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUMainWindowController.h; sourceTree = "<group>"; };
-		902CE9421C537AB900B277EC /* GMUMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUMainWindowController.m; sourceTree = "<group>"; };
-		902CE9441C5809ED00B277EC /* GMUSidebarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUSidebarController.h; sourceTree = "<group>"; };
-		902CE9451C5809ED00B277EC /* GMUSidebarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUSidebarController.m; sourceTree = "<group>"; };
-		902CE9481C581AF900B277EC /* GMURepoSidebarCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMURepoSidebarCellView.h; sourceTree = "<group>"; };
-		902CE9491C581AF900B277EC /* GMURepoSidebarCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMURepoSidebarCellView.m; sourceTree = "<group>"; };
+		900F9A511C60683800968E24 /* GMUTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GMUTabViewController.h; path = ../Controllers/GMUTabViewController.h; sourceTree = "<group>"; };
+		900F9A521C60683800968E24 /* GMUTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GMUTabViewController.m; path = ../Controllers/GMUTabViewController.m; sourceTree = "<group>"; };
+		900F9A5C1C606B2200968E24 /* GMUManageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUManageViewController.h; sourceTree = "<group>"; };
+		900F9A5D1C606B2200968E24 /* GMUManageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUManageViewController.m; sourceTree = "<group>"; };
+		900F9A5E1C606B2200968E24 /* GMUManageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GMUManageViewController.xib; sourceTree = "<group>"; };
+		900F9A611C606B3200968E24 /* GMUConfigureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUConfigureViewController.h; sourceTree = "<group>"; };
+		900F9A621C606B3200968E24 /* GMUConfigureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUConfigureViewController.m; sourceTree = "<group>"; };
+		900F9A631C606B3200968E24 /* GMUConfigureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GMUConfigureViewController.xib; sourceTree = "<group>"; };
+		900F9A681C607ADB00968E24 /* GMURepoTableRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMURepoTableRowView.h; sourceTree = "<group>"; };
+		900F9A691C607ADB00968E24 /* GMURepoTableRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMURepoTableRowView.m; sourceTree = "<group>"; };
+		900F9A701C60A39500968E24 /* OpenInTerminal.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = OpenInTerminal.scpt; sourceTree = "<group>"; };
+		900F9A711C60A39500968E24 /* OpenIniTerm.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = OpenIniTerm.scpt; sourceTree = "<group>"; };
+		900F9A761C61636200968E24 /* GMURevealInTerminalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMURevealInTerminalController.h; sourceTree = "<group>"; };
+		900F9A771C61636200968E24 /* GMURevealInTerminalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMURevealInTerminalController.m; sourceTree = "<group>"; };
+		900F9A791C61806200968E24 /* NSColor+Solarized.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+Solarized.h"; sourceTree = "<group>"; };
+		900F9A7A1C61806200968E24 /* NSColor+Solarized.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+Solarized.m"; sourceTree = "<group>"; };
+		900F9A8F1C6188F500968E24 /* Divider.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Divider.tif; sourceTree = "<group>"; };
+		902868D91C61BC3600482E16 /* GMUImageTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUImageTransformer.h; sourceTree = "<group>"; };
+		902868DA1C61BC3600482E16 /* GMUImageTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUImageTransformer.m; sourceTree = "<group>"; };
+		902868DD1C61BF9900482E16 /* GMUConfiguration+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GMUConfiguration+CoreDataProperties.h"; sourceTree = "<group>"; };
+		902868DE1C61BF9900482E16 /* GMUConfiguration+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GMUConfiguration+CoreDataProperties.m"; sourceTree = "<group>"; };
+		902868DF1C61BF9900482E16 /* GMUConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUConfiguration.h; sourceTree = "<group>"; };
+		902868E01C61BF9900482E16 /* GMUConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUConfiguration.m; sourceTree = "<group>"; };
+		902868EF1C61C75A00482E16 /* GMUCoreDataManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUCoreDataManagerSpec.m; sourceTree = "<group>"; };
+		902CE9481C581AF900B277EC /* GMURepoTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMURepoTableCellView.h; sourceTree = "<group>"; };
+		902CE9491C581AF900B277EC /* GMURepoTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMURepoTableCellView.m; sourceTree = "<group>"; };
 		902CE94D1C581D9E00B277EC /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXTKeyPathCoding.h; path = ../SharedCode/libextobjc/EXTKeyPathCoding.h; sourceTree = "<group>"; };
 		902CE94E1C581D9E00B277EC /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = metamacros.h; path = ../SharedCode/libextobjc/metamacros.h; sourceTree = "<group>"; };
 		902CE9571C5830FA00B277EC /* GMUUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GMUUtilities.h; path = Shared/GMUUtilities.h; sourceTree = "<group>"; };
 		902CE9581C5830FA00B277EC /* GMUUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GMUUtilities.m; path = Shared/GMUUtilities.m; sourceTree = "<group>"; };
-		902CE95B1C58321800B277EC /* GMUManagedRepo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GMUManagedRepo+CoreDataProperties.h"; sourceTree = "<group>"; };
-		902CE95C1C58321800B277EC /* GMUManagedRepo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GMUManagedRepo+CoreDataProperties.m"; sourceTree = "<group>"; };
-		902CE95D1C58321800B277EC /* GMUManagedRepo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUManagedRepo.h; sourceTree = "<group>"; };
-		902CE95E1C58321800B277EC /* GMUManagedRepo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUManagedRepo.m; sourceTree = "<group>"; };
-		902CE95F1C58321800B277EC /* GMURepoGroup+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GMURepoGroup+CoreDataProperties.h"; sourceTree = "<group>"; };
-		902CE9601C58321800B277EC /* GMURepoGroup+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GMURepoGroup+CoreDataProperties.m"; sourceTree = "<group>"; };
-		902CE9611C58321800B277EC /* GMURepoGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMURepoGroup.h; sourceTree = "<group>"; };
-		902CE9621C58321800B277EC /* GMURepoGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMURepoGroup.m; sourceTree = "<group>"; };
-		902CE9671C58405800B277EC /* GMURepoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMURepoDetailViewController.h; sourceTree = "<group>"; };
-		902CE9681C58405800B277EC /* GMURepoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMURepoDetailViewController.m; sourceTree = "<group>"; };
-		902CE9691C58405800B277EC /* GMURepoDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GMURepoDetailViewController.xib; sourceTree = "<group>"; };
 		902CE96C1C58491F00B277EC /* GMUCommitTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUCommitTableCellView.h; sourceTree = "<group>"; };
 		902CE96D1C58491F00B277EC /* GMUCommitTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUCommitTableCellView.m; sourceTree = "<group>"; };
 		902CE9741C586C5400B277EC /* GMUDataModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GMUDataModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -223,11 +293,6 @@
 		90451E811C5336ED00ECF88D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90451E891C5337FB00ECF88D /* GMUConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GMUConstants.m; path = Shared/GMUConstants.m; sourceTree = "<group>"; };
 		90451E8F1C53381500ECF88D /* GMUConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GMUConstants.h; path = Shared/GMUConstants.h; sourceTree = "<group>"; };
-		90451E911C5339AD00ECF88D /* GMUCoreDataStackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUCoreDataStackManager.m; sourceTree = "<group>"; };
-		90451E921C5339AD00ECF88D /* GMUCoreDataStackManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUCoreDataStackManager.h; sourceTree = "<group>"; };
-		90451E941C5339AD00ECF88D /* GMUModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GMUModel.xcdatamodel; sourceTree = "<group>"; };
-		90451EA31C533AD100ECF88D /* GMUMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUMainViewController.h; sourceTree = "<group>"; };
-		90451EA41C533AD100ECF88D /* GMUMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUMainViewController.m; sourceTree = "<group>"; };
 		9065B9681C52E00500854414 /* GitMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9065B96B1C52E00500854414 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9065B96C1C52E00500854414 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -236,10 +301,6 @@
 		9065B97B1C52E00500854414 /* GitMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9065B97F1C52E00500854414 /* GitMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitMenuTests.m; sourceTree = "<group>"; };
 		9065B9811C52E00500854414 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		907C8BC51C52E0C900A09E55 /* JMLLoggerColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JMLLoggerColors.m; path = ../SharedCode/JMLLoggerColors.m; sourceTree = "<group>"; };
-		907C8BC61C52E0C900A09E55 /* JMLLoggerColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JMLLoggerColors.h; path = ../SharedCode/JMLLoggerColors.h; sourceTree = "<group>"; };
-		907C8BC71C52E0C900A09E55 /* JMLLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JMLLogging.h; path = ../SharedCode/JMLLogging.h; sourceTree = "<group>"; };
-		907C8BC81C52E0C900A09E55 /* ZAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZAssert.h; path = ../SharedCode/ZAssert.h; sourceTree = "<group>"; };
 		907C8BD21C52E2BC00A09E55 /* GitFinderMenu.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GitFinderMenu.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		907C8BD51C52E2BC00A09E55 /* GitFinderMenu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = GitFinderMenu.entitlements; sourceTree = "<group>"; };
 		907C8BD61C52E2BC00A09E55 /* GMUFinderSync.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMUFinderSync.h; sourceTree = "<group>"; };
@@ -256,6 +317,25 @@
 		9090BF611C586CF100DD1DC0 /* GMURepoGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMURepoGroup.m; sourceTree = "<group>"; };
 		9090BF621C586CF100DD1DC0 /* GMUCoreDataStackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUCoreDataStackManager.m; sourceTree = "<group>"; };
 		9090BF631C586CF100DD1DC0 /* GMUCoreDataStackManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUCoreDataStackManager.h; sourceTree = "<group>"; };
+		90CAD7131C62BF1D007605D7 /* GMUSyncServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMUSyncServiceProtocol.h; sourceTree = "<group>"; };
+		90CAD7141C62BF1D007605D7 /* GMUSyncService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMUSyncService.h; sourceTree = "<group>"; };
+		90CAD7151C62BF1D007605D7 /* GMUSyncService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMUSyncService.m; sourceTree = "<group>"; };
+		90CAD7171C62BF1D007605D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		90CAD7191C62BF1D007605D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90F023221C63219200C68A76 /* GMUDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUDetailViewController.h; sourceTree = "<group>"; };
+		90F023231C63219200C68A76 /* GMUDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUDetailViewController.m; sourceTree = "<group>"; };
+		90F023241C63219200C68A76 /* GMUDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GMUDetailViewController.xib; sourceTree = "<group>"; };
+		90F0232F1C6322B900C68A76 /* GMUDetailWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUDetailWindowController.h; sourceTree = "<group>"; };
+		90F023301C6322B900C68A76 /* GMUDetailWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUDetailWindowController.m; sourceTree = "<group>"; };
+		90F023311C6322B900C68A76 /* GMUDetailWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GMUDetailWindowController.xib; sourceTree = "<group>"; };
+		90F023371C6348DF00C68A76 /* GMUItem+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GMUItem+CoreDataProperties.h"; sourceTree = "<group>"; };
+		90F023381C6348DF00C68A76 /* GMUItem+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GMUItem+CoreDataProperties.m"; sourceTree = "<group>"; };
+		90F023391C6348DF00C68A76 /* GMUItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUItem.h; sourceTree = "<group>"; };
+		90F0233A1C6348DF00C68A76 /* GMUItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUItem.m; sourceTree = "<group>"; };
+		90F0233F1C634D1E00C68A76 /* GMUFavorites+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GMUFavorites+CoreDataProperties.h"; sourceTree = "<group>"; };
+		90F023401C634D1E00C68A76 /* GMUFavorites+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GMUFavorites+CoreDataProperties.m"; sourceTree = "<group>"; };
+		90F023411C634D1E00C68A76 /* GMUFavorites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUFavorites.h; sourceTree = "<group>"; };
+		90F023421C634D1E00C68A76 /* GMUFavorites.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUFavorites.m; sourceTree = "<group>"; };
 		9D5C5506FD12FC389377D0F5 /* Pods-GMUDataModelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMUDataModelTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GMUDataModelTests/Pods-GMUDataModelTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC3B7974A1987EE3E9A01840 /* Pods-GitMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitMenu/Pods-GitMenu.debug.xcconfig"; sourceTree = "<group>"; };
 		B236C9D4B89B50433BA83D32 /* Pods-GitFinderMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitFinderMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitFinderMenu/Pods-GitFinderMenu.release.xcconfig"; sourceTree = "<group>"; };
@@ -264,6 +344,8 @@
 		C42C748C7C292A4B883D835B /* Pods_GMUDataModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMUDataModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70946D52F286EDC50D60504 /* Pods-GitMenuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitMenuTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitMenuTests/Pods-GitMenuTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D564F2DF8FB11B5AEC93EAD7 /* Pods-GitFinderMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitFinderMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitFinderMenu/Pods-GitFinderMenu.debug.xcconfig"; sourceTree = "<group>"; };
+		DAB696C48045F3D8412755B0 /* Pods-Git-GitMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Git-GitMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Git-GitMenu/Pods-Git-GitMenu.debug.xcconfig"; sourceTree = "<group>"; };
+		E06E3971DD7293D11096C8E5 /* Pods-Git-GitFinderMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Git-GitFinderMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Git-GitFinderMenu/Pods-Git-GitFinderMenu.release.xcconfig"; sourceTree = "<group>"; };
 		FDBE968B4606313243C507EB /* Pods-GitMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitMenu/Pods-GitMenu.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -274,6 +356,7 @@
 			files = (
 				9090BF791C586DC000DD1DC0 /* ObjectiveGit.framework in Frameworks */,
 				87048197B9A11D3433F34116 /* Pods_GMUDataModel.framework in Frameworks */,
+				076A4A5966D0FFD0BB56854E /* Pods_Git_GMUDataModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +376,7 @@
 				902CE9511C5823BB00B277EC /* ObjectiveGit.framework in Frameworks */,
 				902CE9891C586C5400B277EC /* GMUDataModel.framework in Frameworks */,
 				FB699C8144075BBE721B3B7B /* Pods_GitMenu.framework in Frameworks */,
+				E56A2A4275610998F03287FD /* Pods_Git_GitMenu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +394,7 @@
 			files = (
 				9090BF7C1C586E7500DD1DC0 /* GMUDataModel.framework in Frameworks */,
 				CFC65C84D9AD7D43995DF2A7 /* Pods_GitFinderMenu.framework in Frameworks */,
+				30F55E8EF5987740B159C990 /* Pods_Git_GitFinderMenu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +414,12 @@
 				42B051072050FE6E44C0BA12 /* Pods-GMUDataModel.release.xcconfig */,
 				9D5C5506FD12FC389377D0F5 /* Pods-GMUDataModelTests.debug.xcconfig */,
 				8B3675058FB2876D5B1D052C /* Pods-GMUDataModelTests.release.xcconfig */,
+				4317576AB6CD3B5E84BFB0FE /* Pods-Git-GMUDataModel.debug.xcconfig */,
+				2F7CA9FA3CA930C80100B68D /* Pods-Git-GMUDataModel.release.xcconfig */,
+				4F49D96DE631F07FE727D2C4 /* Pods-Git-GitFinderMenu.debug.xcconfig */,
+				E06E3971DD7293D11096C8E5 /* Pods-Git-GitFinderMenu.release.xcconfig */,
+				DAB696C48045F3D8412755B0 /* Pods-Git-GitMenu.debug.xcconfig */,
+				8FD027E930278F7CE39E0905 /* Pods-Git-GitMenu.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -342,44 +433,99 @@
 				06BB035D8F63A0D6019B6FA1 /* Pods_GitFinderMenu.framework */,
 				2D6252744E878CE5FAFB5DE4 /* Pods_GitMenu.framework */,
 				41807AF6F06E7C019ADB272E /* Pods_GitMenuTests.framework */,
+				2E81490DE5FC157C937A9E59 /* Pods_Git_GMUDataModel.framework */,
+				4C3A2C776FE6879B0FF5DCB3 /* Pods_Git_GitFinderMenu.framework */,
+				04DC6703C01F071AE60534E9 /* Pods_Git_GitMenu.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		900F9A5B1C606ADD00968E24 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				9065B9731C52E00500854414 /* MainMenu.xib */,
+				900F9A511C60683800968E24 /* GMUTabViewController.h */,
+				900F9A521C60683800968E24 /* GMUTabViewController.m */,
+				900F9A671C606B3E00968E24 /* Manage */,
+				900F9A661C606B3500968E24 /* Configure */,
+				90F0232E1C6322A100C68A76 /* Details */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		900F9A661C606B3500968E24 /* Configure */ = {
+			isa = PBXGroup;
+			children = (
+				900F9A611C606B3200968E24 /* GMUConfigureViewController.h */,
+				900F9A621C606B3200968E24 /* GMUConfigureViewController.m */,
+				900F9A631C606B3200968E24 /* GMUConfigureViewController.xib */,
+			);
+			name = Configure;
+			sourceTree = "<group>";
+		};
+		900F9A671C606B3E00968E24 /* Manage */ = {
+			isa = PBXGroup;
+			children = (
+				900F9A5C1C606B2200968E24 /* GMUManageViewController.h */,
+				900F9A5D1C606B2200968E24 /* GMUManageViewController.m */,
+				900F9A5E1C606B2200968E24 /* GMUManageViewController.xib */,
+				900F9A761C61636200968E24 /* GMURevealInTerminalController.h */,
+				900F9A771C61636200968E24 /* GMURevealInTerminalController.m */,
+			);
+			name = Manage;
+			sourceTree = "<group>";
+		};
+		902868BF1C61BBD100482E16 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				90F0233F1C634D1E00C68A76 /* GMUFavorites+CoreDataProperties.h */,
+				90F023401C634D1E00C68A76 /* GMUFavorites+CoreDataProperties.m */,
+				90F023411C634D1E00C68A76 /* GMUFavorites.h */,
+				90F023421C634D1E00C68A76 /* GMUFavorites.m */,
+				902868DD1C61BF9900482E16 /* GMUConfiguration+CoreDataProperties.h */,
+				902868DE1C61BF9900482E16 /* GMUConfiguration+CoreDataProperties.m */,
+				902868DF1C61BF9900482E16 /* GMUConfiguration.h */,
+				902868E01C61BF9900482E16 /* GMUConfiguration.m */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		902868D81C61BC2200482E16 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				902868D91C61BC3600482E16 /* GMUImageTransformer.h */,
+				902868DA1C61BC3600482E16 /* GMUImageTransformer.m */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		902CE9471C581ACF00B277EC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				902CE9481C581AF900B277EC /* GMURepoSidebarCellView.h */,
-				902CE9491C581AF900B277EC /* GMURepoSidebarCellView.m */,
+				902CE9481C581AF900B277EC /* GMURepoTableCellView.h */,
+				902CE9491C581AF900B277EC /* GMURepoTableCellView.m */,
 				902CE96C1C58491F00B277EC /* GMUCommitTableCellView.h */,
 				902CE96D1C58491F00B277EC /* GMUCommitTableCellView.m */,
+				900F9A681C607ADB00968E24 /* GMURepoTableRowView.h */,
+				900F9A691C607ADB00968E24 /* GMURepoTableRowView.m */,
+				9008D6A61C640CF500C5FC99 /* GMUSidebarTableCellView.h */,
+				9008D6A71C640CF500C5FC99 /* GMUSidebarTableCellView.m */,
+				9008D6A91C64193B00C5FC99 /* JMLColoredView.h */,
+				9008D6AA1C64193B00C5FC99 /* JMLColoredView.m */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		902CE95A1C58321800B277EC /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				902CE95B1C58321800B277EC /* GMUManagedRepo+CoreDataProperties.h */,
-				902CE95C1C58321800B277EC /* GMUManagedRepo+CoreDataProperties.m */,
-				902CE95D1C58321800B277EC /* GMUManagedRepo.h */,
-				902CE95E1C58321800B277EC /* GMUManagedRepo.m */,
-				902CE95F1C58321800B277EC /* GMURepoGroup+CoreDataProperties.h */,
-				902CE9601C58321800B277EC /* GMURepoGroup+CoreDataProperties.m */,
-				902CE9611C58321800B277EC /* GMURepoGroup.h */,
-				902CE9621C58321800B277EC /* GMURepoGroup.m */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		902CE9751C586C5400B277EC /* GMUDataModel */ = {
 			isa = PBXGroup;
 			children = (
-				9090BF571C586CF100DD1DC0 /* GMUModel.xcdatamodeld */,
-				9090BF591C586CF100DD1DC0 /* Models */,
+				902868D81C61BC2200482E16 /* Helpers */,
+				902CE9761C586C5400B277EC /* GMUDataModel.h */,
 				9090BF621C586CF100DD1DC0 /* GMUCoreDataStackManager.m */,
 				9090BF631C586CF100DD1DC0 /* GMUCoreDataStackManager.h */,
-				902CE9761C586C5400B277EC /* GMUDataModel.h */,
+				9090BF571C586CF100DD1DC0 /* GMUModel.xcdatamodeld */,
+				9090BF591C586CF100DD1DC0 /* Models */,
+				902868BF1C61BBD100482E16 /* Configuration */,
 				902CE9781C586C5400B277EC /* Info.plist */,
 			);
 			path = GMUDataModel;
@@ -390,6 +536,7 @@
 			children = (
 				902CE9841C586C5400B277EC /* GMUDataModelTests.m */,
 				902CE9861C586C5400B277EC /* Info.plist */,
+				902868EF1C61C75A00482E16 /* GMUCoreDataManagerSpec.m */,
 			);
 			path = GMUDataModelTests;
 			sourceTree = "<group>";
@@ -397,12 +544,16 @@
 		90451E2D1C52F74E00ECF88D /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				900F9A791C61806200968E24 /* NSColor+Solarized.h */,
+				900F9A7A1C61806200968E24 /* NSColor+Solarized.m */,
 				90451E8F1C53381500ECF88D /* GMUConstants.h */,
 				90451E891C5337FB00ECF88D /* GMUConstants.m */,
-				907C8BC51C52E0C900A09E55 /* JMLLoggerColors.m */,
-				907C8BC61C52E0C900A09E55 /* JMLLoggerColors.h */,
 				902CE9571C5830FA00B277EC /* GMUUtilities.h */,
 				902CE9581C5830FA00B277EC /* GMUUtilities.m */,
+				9008D69A1C63AC0A00C5FC99 /* JMLSubpaths.h */,
+				9008D69B1C63AC0A00C5FC99 /* JMLSubpaths.m */,
+				9008D69F1C63B21B00C5FC99 /* JMLLoggerColors.h */,
+				9008D6A01C63B21B00C5FC99 /* JMLLoggerColors.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -410,10 +561,10 @@
 		90451E2E1C52F75700ECF88D /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				9008D6A11C63B21B00C5FC99 /* JMLLogging.h */,
+				9008D6A21C63B21C00C5FC99 /* ZAssert.h */,
 				902CE94D1C581D9E00B277EC /* EXTKeyPathCoding.h */,
 				902CE94E1C581D9E00B277EC /* metamacros.h */,
-				907C8BC71C52E0C900A09E55 /* JMLLogging.h */,
-				907C8BC81C52E0C900A09E55 /* ZAssert.h */,
 			);
 			name = Headers;
 			sourceTree = "<group>";
@@ -432,39 +583,15 @@
 		90451E7D1C5336ED00ECF88D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				900F9A8F1C6188F500968E24 /* Divider.tif */,
+				900F9A701C60A39500968E24 /* OpenInTerminal.scpt */,
+				900F9A711C60A39500968E24 /* OpenIniTerm.scpt */,
 				90451E7E1C5336ED00ECF88D /* GitMenu-Prefix.pch */,
 				90451E7F1C5336ED00ECF88D /* GitMenu.entitlements */,
 				90451E801C5336ED00ECF88D /* Info.plist */,
 				90451E811C5336ED00ECF88D /* main.m */,
 			);
 			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		90451E901C53396C00ECF88D /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				902CE95A1C58321800B277EC /* Models */,
-				90451E911C5339AD00ECF88D /* GMUCoreDataStackManager.m */,
-				90451E921C5339AD00ECF88D /* GMUCoreDataStackManager.h */,
-				90451E931C5339AD00ECF88D /* GMUModel.xcdatamodeld */,
-			);
-			path = CoreData;
-			sourceTree = "<group>";
-		};
-		90451EA21C533AD100ECF88D /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				90451EA31C533AD100ECF88D /* GMUMainViewController.h */,
-				90451EA41C533AD100ECF88D /* GMUMainViewController.m */,
-				902CE9411C537AB900B277EC /* GMUMainWindowController.h */,
-				902CE9421C537AB900B277EC /* GMUMainWindowController.m */,
-				902CE9441C5809ED00B277EC /* GMUSidebarController.h */,
-				902CE9451C5809ED00B277EC /* GMUSidebarController.m */,
-				902CE9671C58405800B277EC /* GMURepoDetailViewController.h */,
-				902CE9681C58405800B277EC /* GMURepoDetailViewController.m */,
-				902CE9691C58405800B277EC /* GMURepoDetailViewController.xib */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		9065B95F1C52E00500854414 = {
@@ -476,6 +603,7 @@
 				907C8BD31C52E2BC00A09E55 /* GitFinderMenu */,
 				902CE9751C586C5400B277EC /* GMUDataModel */,
 				902CE9831C586C5400B277EC /* GMUDataModelTests */,
+				90CAD7121C62BF1D007605D7 /* GMUSyncService */,
 				9065B9691C52E00500854414 /* Products */,
 				40C317BF75DEC924ECF879D6 /* Pods */,
 				8C3FB9C967A59025BC74C226 /* Frameworks */,
@@ -500,10 +628,8 @@
 				9065B96B1C52E00500854414 /* AppDelegate.h */,
 				9065B96C1C52E00500854414 /* AppDelegate.m */,
 				9065B9711C52E00500854414 /* Assets.xcassets */,
-				9065B9731C52E00500854414 /* MainMenu.xib */,
-				90451EA21C533AD100ECF88D /* Controllers */,
-				90451E901C53396C00ECF88D /* CoreData */,
 				902CE9471C581ACF00B277EC /* Views */,
+				900F9A5B1C606ADD00968E24 /* User Interface */,
 				90451E7D1C5336ED00ECF88D /* Supporting Files */,
 			);
 			path = GitMenu;
@@ -553,6 +679,10 @@
 		9090BF591C586CF100DD1DC0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				90F023371C6348DF00C68A76 /* GMUItem+CoreDataProperties.h */,
+				90F023381C6348DF00C68A76 /* GMUItem+CoreDataProperties.m */,
+				90F023391C6348DF00C68A76 /* GMUItem.h */,
+				90F0233A1C6348DF00C68A76 /* GMUItem.m */,
 				9090BF5A1C586CF100DD1DC0 /* GMUManagedRepo+CoreDataProperties.h */,
 				9090BF5B1C586CF100DD1DC0 /* GMUManagedRepo+CoreDataProperties.m */,
 				9090BF5C1C586CF100DD1DC0 /* GMUManagedRepo.h */,
@@ -563,6 +693,31 @@
 				9090BF611C586CF100DD1DC0 /* GMURepoGroup.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		90CAD7121C62BF1D007605D7 /* GMUSyncService */ = {
+			isa = PBXGroup;
+			children = (
+				90CAD7131C62BF1D007605D7 /* GMUSyncServiceProtocol.h */,
+				90CAD7141C62BF1D007605D7 /* GMUSyncService.h */,
+				90CAD7151C62BF1D007605D7 /* GMUSyncService.m */,
+				90CAD7171C62BF1D007605D7 /* main.m */,
+				90CAD7191C62BF1D007605D7 /* Info.plist */,
+			);
+			path = GMUSyncService;
+			sourceTree = "<group>";
+		};
+		90F0232E1C6322A100C68A76 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				90F023221C63219200C68A76 /* GMUDetailViewController.h */,
+				90F023231C63219200C68A76 /* GMUDetailViewController.m */,
+				90F023241C63219200C68A76 /* GMUDetailViewController.xib */,
+				90F0232F1C6322B900C68A76 /* GMUDetailWindowController.h */,
+				90F023301C6322B900C68A76 /* GMUDetailWindowController.m */,
+				90F023311C6322B900C68A76 /* GMUDetailWindowController.xib */,
+			);
+			name = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -577,7 +732,14 @@
 				9090BF671C586CF100DD1DC0 /* GMUManagedRepo.h in Headers */,
 				9090BF691C586CF100DD1DC0 /* GMURepoGroup+CoreDataProperties.h in Headers */,
 				9090BF6E1C586CF100DD1DC0 /* GMUCoreDataStackManager.h in Headers */,
+				90F0233B1C6348DF00C68A76 /* GMUItem+CoreDataProperties.h in Headers */,
+				90F0233D1C6348DF00C68A76 /* GMUItem.h in Headers */,
+				902868E71C61BF9900482E16 /* GMUConfiguration.h in Headers */,
 				902CE9771C586C5400B277EC /* GMUDataModel.h in Headers */,
+				902868E51C61BF9900482E16 /* GMUConfiguration+CoreDataProperties.h in Headers */,
+				90F023431C634D1E00C68A76 /* GMUFavorites+CoreDataProperties.h in Headers */,
+				902868DB1C61BC3600482E16 /* GMUImageTransformer.h in Headers */,
+				90F023451C634D1E00C68A76 /* GMUFavorites.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,6 +801,7 @@
 				7F818467C6C73E6BB65E45C3 /* Embed Pods Frameworks */,
 				EBD6F66EC911EE44D3A2D127 /* Copy Pods Resources */,
 				907C8BE01C52E2BC00A09E55 /* Embed App Extensions */,
+				90CAD7201C62BF1D007605D7 /* Embed XPC Services */,
 			);
 			buildRules = (
 			);
@@ -731,6 +894,9 @@
 							com.apple.ApplicationGroups.Mac = {
 								enabled = 1;
 							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
 						};
 					};
 				};
@@ -815,9 +981,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9065B9721C52E00500854414 /* Assets.xcassets in Resources */,
-				902CE96B1C58405800B277EC /* GMURepoDetailViewController.xib in Resources */,
+				900F9A901C6188F500968E24 /* Divider.tif in Resources */,
+				900F9A731C60A39500968E24 /* OpenIniTerm.scpt in Resources */,
 				9065B9751C52E00500854414 /* MainMenu.xib in Resources */,
 				90451E821C5336ED00ECF88D /* GitMenu.entitlements in Resources */,
+				90F023261C63219200C68A76 /* GMUDetailViewController.xib in Resources */,
+				90F023331C6322B900C68A76 /* GMUDetailWindowController.xib in Resources */,
+				900F9A601C606B2200968E24 /* GMUManageViewController.xib in Resources */,
+				900F9A721C60A39500968E24 /* OpenInTerminal.scpt in Resources */,
+				900F9A651C606B3200968E24 /* GMUConfigureViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -832,7 +1004,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				900F9A741C60A3A500968E24 /* OpenInTerminal.scpt in Resources */,
 				903F75941C588FB100A8495E /* Assets.xcassets in Resources */,
+				900F9A751C60A3A800968E24 /* OpenIniTerm.scpt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -851,7 +1025,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GMUDataModel/Pods-GMUDataModel-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Git-GMUDataModel/Pods-Git-GMUDataModel-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		0E4B348213604C402B5999F4 /* Check Pods Manifest.lock */ = {
@@ -926,7 +1100,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GitFinderMenu/Pods-GitFinderMenu-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Git-GitFinderMenu/Pods-Git-GitFinderMenu-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7F818467C6C73E6BB65E45C3 /* Embed Pods Frameworks */ = {
@@ -941,7 +1115,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GitMenu/Pods-GitMenu-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Git-GitMenu/Pods-Git-GitMenu-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8BD38BBEE53CF2E7596B2F0F /* Embed Pods Frameworks */ = {
@@ -986,7 +1160,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GitFinderMenu/Pods-GitFinderMenu-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Git-GitFinderMenu/Pods-Git-GitFinderMenu-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AA3B8BA94DEBC91407123F0C /* Embed Pods Frameworks */ = {
@@ -1031,7 +1205,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GitMenu/Pods-GitMenu-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Git-GitMenu/Pods-Git-GitMenu-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FBC785E1D9161A967A65DE0E /* Check Pods Manifest.lock */ = {
@@ -1057,9 +1231,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				9090BF641C586CF100DD1DC0 /* GMUModel.xcdatamodeld in Sources */,
+				902868DC1C61BC3600482E16 /* GMUImageTransformer.m in Sources */,
+				90F023441C634D1E00C68A76 /* GMUFavorites+CoreDataProperties.m in Sources */,
+				902868E81C61BF9900482E16 /* GMUConfiguration.m in Sources */,
+				90F0233C1C6348DF00C68A76 /* GMUItem+CoreDataProperties.m in Sources */,
+				902868E61C61BF9900482E16 /* GMUConfiguration+CoreDataProperties.m in Sources */,
 				9090BF6D1C586CF100DD1DC0 /* GMUCoreDataStackManager.m in Sources */,
+				90F023461C634D1E00C68A76 /* GMUFavorites.m in Sources */,
 				9090BF6C1C586CF100DD1DC0 /* GMURepoGroup.m in Sources */,
+				9008D6A51C63B22500C5FC99 /* JMLLoggerColors.m in Sources */,
 				9090BF761C586D9100DD1DC0 /* GMUConstants.m in Sources */,
+				90F0233E1C6348DF00C68A76 /* GMUItem.m in Sources */,
 				9090BF6A1C586CF100DD1DC0 /* GMURepoGroup+CoreDataProperties.m in Sources */,
 				9090BF661C586CF100DD1DC0 /* GMUManagedRepo+CoreDataProperties.m in Sources */,
 				9090BF681C586CF100DD1DC0 /* GMUManagedRepo.m in Sources */,
@@ -1071,6 +1253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				902CE9851C586C5400B277EC /* GMUDataModelTests.m in Sources */,
+				902868F01C61C75A00482E16 /* GMUCoreDataManagerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1078,17 +1261,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				907C8BC91C52E0C900A09E55 /* JMLLoggerColors.m in Sources */,
+				900F9A531C60683800968E24 /* GMUTabViewController.m in Sources */,
 				90451E841C5336ED00ECF88D /* main.m in Sources */,
+				900F9A6A1C607ADB00968E24 /* GMURepoTableRowView.m in Sources */,
 				902CE9591C5830FA00B277EC /* GMUUtilities.m in Sources */,
 				902CE96E1C58491F00B277EC /* GMUCommitTableCellView.m in Sources */,
-				90451EA61C533AD100ECF88D /* GMUMainViewController.m in Sources */,
-				902CE96A1C58405800B277EC /* GMURepoDetailViewController.m in Sources */,
-				902CE9461C5809ED00B277EC /* GMUSidebarController.m in Sources */,
-				902CE94A1C581AF900B277EC /* GMURepoSidebarCellView.m in Sources */,
+				900F9A5F1C606B2200968E24 /* GMUManageViewController.m in Sources */,
+				900F9A781C61636200968E24 /* GMURevealInTerminalController.m in Sources */,
+				9008D6A31C63B21C00C5FC99 /* JMLLoggerColors.m in Sources */,
+				900F9A641C606B3200968E24 /* GMUConfigureViewController.m in Sources */,
+				902CE94A1C581AF900B277EC /* GMURepoTableCellView.m in Sources */,
+				90F023321C6322B900C68A76 /* GMUDetailWindowController.m in Sources */,
 				9065B96D1C52E00500854414 /* AppDelegate.m in Sources */,
-				902CE9431C537AB900B277EC /* GMUMainWindowController.m in Sources */,
+				9008D69C1C63AC0A00C5FC99 /* JMLSubpaths.m in Sources */,
+				900F9A7B1C61806200968E24 /* NSColor+Solarized.m in Sources */,
 				90451E8B1C5337FB00ECF88D /* GMUConstants.m in Sources */,
+				9008D6AB1C64193B00C5FC99 /* JMLColoredView.m in Sources */,
+				90F023251C63219200C68A76 /* GMUDetailViewController.m in Sources */,
+				9008D6A81C640CF500C5FC99 /* GMUSidebarTableCellView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1097,7 +1287,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9065B9801C52E00500854414 /* GitMenuTests.m in Sources */,
-				902CE92D1C53595600B277EC /* JMLLoggerColors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1106,6 +1295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				903F75971C58903800A8495E /* GMURepoController.m in Sources */,
+				9008D6A41C63B22400C5FC99 /* JMLLoggerColors.m in Sources */,
 				907C8BD81C52E2BC00A09E55 /* GMUFinderSync.m in Sources */,
 				90451E8C1C5337FB00ECF88D /* GMUConstants.m in Sources */,
 			);
@@ -1158,6 +1348,7 @@
 				9065B9741C52E00500854414 /* Base */,
 			);
 			name = MainMenu.xib;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1165,7 +1356,7 @@
 /* Begin XCBuildConfiguration section */
 		902CE98C1C586C5400B277EC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCA2739CFE04F90D23D57E26 /* Pods-GMUDataModel.debug.xcconfig */;
+			baseConfigurationReference = 4317576AB6CD3B5E84BFB0FE /* Pods-Git-GMUDataModel.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
@@ -1176,6 +1367,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = GMUDataModel/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1190,7 +1385,7 @@
 		};
 		902CE98D1C586C5400B277EC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42B051072050FE6E44C0BA12 /* Pods-GMUDataModel.release.xcconfig */;
+			baseConfigurationReference = 2F7CA9FA3CA930C80100B68D /* Pods-Git-GMUDataModel.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
@@ -1201,6 +1396,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = GMUDataModel/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1269,6 +1468,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1279,6 +1479,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				WARNING_CFLAGS = "";
 			};
 			name = Debug;
 		};
@@ -1306,6 +1507,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1315,19 +1517,25 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				WARNING_CFLAGS = "";
 			};
 			name = Release;
 		};
 		9065B9851C52E00500854414 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC3B7974A1987EE3E9A01840 /* Pods-GitMenu.debug.xcconfig */;
+			baseConfigurationReference = DAB696C48045F3D8412755B0 /* Pods-Git-GitMenu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "GitMenu/Supporting Files/GitMenu.entitlements";
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GitMenu/Supporting Files/GitMenu-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/GitMenu/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.jmorgan.GitMenu;
@@ -1338,14 +1546,19 @@
 		};
 		9065B9861C52E00500854414 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDBE968B4606313243C507EB /* Pods-GitMenu.release.xcconfig */;
+			baseConfigurationReference = 8FD027E930278F7CE39E0905 /* Pods-Git-GitMenu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "GitMenu/Supporting Files/GitMenu.entitlements";
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GitMenu/Supporting Files/GitMenu-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/GitMenu/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.jmorgan.GitMenu;
@@ -1384,12 +1597,16 @@
 		};
 		907C8BDE1C52E2BC00A09E55 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D564F2DF8FB11B5AEC93EAD7 /* Pods-GitFinderMenu.debug.xcconfig */;
+			baseConfigurationReference = 4F49D96DE631F07FE727D2C4 /* Pods-Git-GitFinderMenu.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = GitFinderMenu/GitFinderMenu.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GitFinderMenu/GitFinderMenu-Prefix.pch";
 				INFOPLIST_FILE = GitFinderMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
@@ -1402,12 +1619,16 @@
 		};
 		907C8BDF1C52E2BC00A09E55 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B236C9D4B89B50433BA83D32 /* Pods-GitFinderMenu.release.xcconfig */;
+			baseConfigurationReference = E06E3971DD7293D11096C8E5 /* Pods-Git-GitFinderMenu.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = GitFinderMenu/GitFinderMenu.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GitFinderMenu/GitFinderMenu-Prefix.pch";
 				INFOPLIST_FILE = GitFinderMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
@@ -1478,16 +1699,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		90451E931C5339AD00ECF88D /* GMUModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				90451E941C5339AD00ECF88D /* GMUModel.xcdatamodel */,
-			);
-			currentVersion = 90451E941C5339AD00ECF88D /* GMUModel.xcdatamodel */;
-			path = GMUModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		9090BF571C586CF100DD1DC0 /* GMUModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
