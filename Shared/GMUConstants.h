@@ -9,7 +9,7 @@
 #ifndef GMUConstants_h
 #define GMUConstants_h
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 #pragma mark - Identifiers
 
@@ -23,13 +23,22 @@ extern NSString *const kManagedRepoEntityName;
 extern NSString *const kRepoGroupEntityName;
 
 #pragma mark - Image Names
-extern NSString *const GMUImageNameFolderBadgeDirty;
-extern NSString *const GMUImageNameFolderBadgeClean;
 extern NSString *const GMUImageNameMenuIcon;
 extern NSString *const GMUImageNameMenuIconAlt;
 
 #pragma mark - Other Constants
 
 extern NSString *const kGit;
+
+#pragma mark - Git Statuses
+
+typedef NS_ENUM(NSInteger, GMUGitRepositoryStatus) {
+    GMUGitRepositoryStatusNew,
+    GMUGitRepositoryStatusDirty,
+    GMUGitRepositoryStatusClean,
+    GMUGitRepositoryStatusRenamed,
+    GMUGitRepositoryStatusIgnored,
+    GMUGitRepositoryStatusConflicted
+};
 
 #endif /* GMUConstants_h */

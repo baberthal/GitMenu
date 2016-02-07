@@ -24,10 +24,6 @@ NSString *const kRepoGroupEntityName = @"RepoGroup";
 
 #pragma mark - Image Names
 
-NSString *const GMUImageNameFolderBadgeDirty = @"folder-badge-dirty";
-
-NSString *const GMUImageNameFolderBadgeClean = @"folder-badge-clean";
-
 NSString *const GMUImageNameMenuIcon = @"branch-with-arrows";
 
 NSString *const GMUImageNameMenuIconAlt = @"branch-with-circles";

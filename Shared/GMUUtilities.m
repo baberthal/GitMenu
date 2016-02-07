@@ -7,7 +7,7 @@
 //
 
 #import "GMUUtilities.h"
-#import <GMUDataModel/GMUDataModel.h>
+@import GMUDataModel;
 
 NSManagedObjectContext *GMU_privateQueueContext(NSError *__autoreleasing *error)
 {
@@ -25,8 +25,29 @@ NSManagedObjectContext *GMU_privateQueueContext(NSError *__autoreleasing *error)
 
     NSManagedObjectContext *context =
           [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
-    [context setPersistentStoreCoordinator:localCoordinator];
+    context.persistentStoreCoordinator = localCoordinator;
     context.undoManager = nil;
 
     return context;
 }
+
+@implementation GMUErrorFactory
+
++ (void)presentCoreDataError:(NSError *)error
+                 description:(NSString *)desc
+                         key:(NSString *)key
+                      domain:(NSString *)domain
+                     andCode:(NSInteger)code
+{
+    DDLogError(@"%@ - %@", desc, error.localizedDescription);
+    DDLogCallStack();
+    NSString *description = NSLocalizedString(desc, key);
+    NSDictionary *dict = @{NSLocalizedDescriptionKey : description, NSUnderlyingErrorKey : error};
+    NSError *connectionError = [NSError errorWithDomain:domain code:code userInfo:dict];
+
+    dispatch_sync(dispatch_get_main_queue(), ^{
+        [NSApp presentError:connectionError];
+    });
+}
+
+@end
