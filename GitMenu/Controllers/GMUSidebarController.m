@@ -7,7 +7,7 @@
 //
 
 #import "GMUSidebarController.h"
-#import "GMURepoSidebarCellView.h"
+#import "GMURepoTableCellView.h"
 #import "GMUUtilities.h"
 #import <GMUDataModel/GMUDataModel.h>
 
@@ -217,8 +217,7 @@ static NSString *const GMUSidebarErrorDomain = @"SIDEBAR_ERROR_DOMAIN";
         return result;
     }
     else {
-        GMURepoSidebarCellView *result =
-              [outlineView makeViewWithIdentifier:@"RepoCell" owner:self];
+        GMURepoTableCellView *result = [outlineView makeViewWithIdentifier:@"RepoCell" owner:self];
         GMUManagedRepo *repo = (GMUManagedRepo *)item;
         [result setRepoValue:repo];
         return result;
